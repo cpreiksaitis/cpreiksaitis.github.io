@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>EVALER12</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 40px;
+    }
+    .header {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .header h1 {
+        font-size: 24px;
+        color: #333;
+    }
+    .author {
+        font-size: 16px;
+        font-weight: bold;
+        color: #666;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .section {
+        margin-bottom: 20px;
+    }
+    .section h2 {
+        color: #0275d8;
+        font-size: 20px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .section h3 {
+        color: black;
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .section h4 {
+        color: #0275d8;
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .section h5 {
+        color: #333;
+        font-size: 14px;
+        margin-top:5px;
+    }
+    .section p {
+        margin-top:5px;
+    }
+    .lighter {
+        font-weight: lighter;
+    }
+    .list {
+        margin-left: 20px;
+        list-style-type: disc;
+    }
+    .link {
+        text-decoration: underline;
+        color: #0275d8;
+    }
+    img {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%;
+        height: auto;
+    }
+    .key-concepts-box {
+            width: 80%;
+            border: 2px solid #0275d8;
+            background-color: #d9e2eb;
+            padding: 20px;
+            margin: 20px auto;
+        }
+        .key-concepts-title {
+            background-color: #0275d8;
+            color: white;
+            padding: 10px;
+            margin: -20px -20px 10px -20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .key-concepts-list {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .key-concepts-list li {
+            margin-bottom: 10px;
+        }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+    caption {
+        caption-side: top;
+        text-align: left;
+        font-weight: bold;
+        padding: 10px 0;
+    }
+    .small {
+        font-size: 70%;
+    }
+    .bold {
+        font-weight: bold;
+    }
+    .question {
+            margin-bottom: 15px;
+        }
+    .question-number {
+            margin-bottom: 5px;
+        }
+    .options{
+            margin-left: 20px;
+            margin-bottom: 30px;
+        }
+    .answer {
+            font-weight: bold;
+            margin-left: 20px;
+        }
+    .answer-explanation {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        .box {
+            width: 80%;
+            border: 2px solid #0275d8;
+            background-color: #d9e2eb;
+            font-size: 14px;
+            padding: 10px;
+            margin: 10px auto;
+        }
+        .box-title {
+            background-color: #0275d8;
+            color: white;
+            padding: 10px;
+            margin: -10px -10px 10px -10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .box-list {
+            list-style-type: disc;
+            padding: 10px;
+        }
+        .box li {
+            margin-bottom: 10px;
+        }
+</style>
+</head>
+<body>
+<div class="header">
+    <h1>Infective Endocarditis and Valvular Heart Disease</h1>
+    <p class="author">Author: Bradley W. Frazee and Marth E. Montgomvery</p>
+</div>
+<div class="key-concepts-box">
+    <div class="key-concepts-title">KEY CONCEPTS</div>
+    <ul class="key-concepts-list">
+        <li>Infectious endocarditis (IE) is more often caused by Staphylococcus species than Streptococcus, and increasingly occurs in elderly, recently hospitalized patients, those with prosthetic valves and intra-cardiac devices, and in patients who inject opioids.</li>
+        <li>IE should be considered in any patient with a predisposing condition plus fever; IE frequently presents with a complication, including heart failure, embolic stroke, or osteomyelitis.</li>
+        <li>At least two sets of blood cultures (obtained before starting antibiotics) and transthoracic echocardiography are the key diagnostic tests to order for patients with suspected IE.</li>
+        <li>Empiric antimicrobial treatment for IE should include vancomycin.</li>
+        <li>Consultation with a cardiothoracic surgeon is recommended for left-sided vegetations.</li>
+        <li>Acute rheumatic fever is a delayed nonsuppurative complication of streptococcal pharyngitis characterized by arthritis, carditis, chorea, subcutaneous nodules, and erythema marginatum.</li>
+        <li>In a patient with severe mitral stenosis, hypovolemia and tachycardia are poorly tolerated. “Slow and full” are appropriate goals.</li>
+        <li>In patients with critical aortic stenosis, avoid excessive preload reduction with vasodilators and diuretics.</li>
+        <li>In patients with acute aortic insufficiency, classic physical findings may be absent. Medical stabilization entails the cautious use of vasodilators and diuretics. Intraaortic balloon counterpulsation is contraindicated.</li>
+        <li>Complications of prosthetic heart valves range from structural failure and thrombosis to systemic embolization, hemolysis, and endocarditis.</li>
+    </ul>
+</div>
+<div class="section">
+    <h2>INFECTIVE ENDOCARDITIS</h2>
+    <h3>Foundations</h3>
+    <h4>Background and Importance</h4>
+    <p>Infective endocarditis (IE) is defined as an infection of a native or prosthetic heart valve, the endocardium, or an indwelling cardiac device. While risk factors and common causative pathogens have shifted in developed countries in recent decades, IE incidence and mortality remain unchanged. IE is a disease with a highly variable and often nonspecific presentation, with the only consistent feature being fever. Early diagnosis and correct initial management remain very challenging, particularly in the emergency department (ED) setting.</p>
+    <p>Recent changes in the epidemiology of IE in industrialized countries have led to changes in disease presentation. While the overall annual incidence has changed little (9 to 15 cases/100,000), IE has increasingly become a disease of older adults, with the incidence rising dramatically in patients over age 60 and those with multiple comorbidities.<sup>1</sup>,<sup>2</sup> The incidence of prosthetic valve, intracardiac device (pacemakers and defibrillators), and healthcare-associated infections is increasing. Up to 36% of community onset IE is healthcare-associated, occurring in nursing home residents, patients undergoing dialysis or chemotherapy, or following a recent hospitalization.<sup>1</sup> As opioid addiction has increased in the United States, the proportion of IE cases linked to injection drug use (IDU) has risen nationwide, from 7% in 2000 to 12% in 2013, and exceeds 50% of cases in some communities.<sup>3</sup>,<sup>4</sup></p>
+    <p>The 90-day mortality from IE averages nearly 25%. Predictors of poor outcomes include older age and presence of comorbidities, infection with <i>Staphylococcus aureus</i>, heart failure, and perivalvular extension.<sup>1</sup>,<sup>5</sup> Streptococcal and isolated right-sided infections are associated with better outcomes.</p>
+</div>
+
+<div class="section">
+    <h4>Pathophysiology and Microbiology</h4>
+    <p>Development of IE requires either predisposing valve dysfunction, endothelial damage, or prosthetic material, conditions that all lead to formation of a platelet-fibrin thrombus, which is then seeded with bacteria (Box 1). Yet, at the time of presentation, up to 50% of IE patients have no known history of predisposing structural or valvular heart disease or prosthetic device.<sup>6</sup> Occult degenerative heart disease and bicuspid aortic valve are thought to account for many such cases. Rheumatic valvular disease, now uncommon in industrialized countries, remains a common predisposing condition in developing countries. Congenital heart disease predisposes to IE, with the highest infection risk being from cyanotic conditions and repaired lesions with residual prosthetic material, shunt, or valve regurgitation. A prior history of IE confers a high lifelong risk of recurrence, even when the source of endothelial damage remains occult.</p>
+    <div class="box">
+        <div class="box-title">Box 1 <br>High-Risk Populations and Predisposing Conditions for Infectious Endocarditis</div>
+        <ul class="box-li">
+            <li>Prior history of endocarditis</li>
+            <li>Congenital heart disease (see text for highest risk lesions)</li>
+            <li>Injection drug use</li>
+            <li>Prosthetic heart valve</li>
+            <li>Intracardiac device (pacemaker, defibrillator)</li>
+            <li>Hemodialysis</li>
+            <li>Recent hospitalization with central or long-term intravenous access</li>
+        </ul>
+    </div>    
+    <p>IDU carries a high risk of IE, even in patients with normal heart valves. Injection of nonsterile illicit drugs leads to endothelial damage by a poorly understood mechanism, and the resulting thrombus can be seeded by frequent injection-related bacteremia. Though IDU-associated IE may involve any valve, it is much more likely to be right-sided than in non-IDU patients, occurring on the tricuspid valve in approximately 50% of cases.</p>
+    <p>Prosthetic heart valves and intra-cardiac device leads represent an increasingly common nidus for infection.<sup>7</sup> In community hospital populations, prosthetic valve and cardiac device-related infections now account for roughly 15% and 5% of IE cases, respectively, with even higher proportions in tertiary care centers.<sup>1</sup>,<sup>8</sup> Prosthetic valve endocarditis (PVE) complicates up to 6% of both bioprosthetic and mechanical valves, with an incidence of 0.3% to 1.2% per patient/year.<sup>5</sup> The highest risk for PVE occurs during the first 6 months after surgery, and these early infections have a worse prognosis. IE associated with pacemaker and defibrillator leads may occur via hematogenous seeding or device pocket infection. It begins as a right-sided infection, usually involving the tricuspid valve.</p>
+    <p>Bacteremia is also considered requisite for the development of IE, except when contamination occurs perioperatively during valve replacement or device implantation. Poor dentition, dental procedures, and cystoscopy are classically implicated sources of bacteremia. IDU, central and long-term intravenous lines in hospitalized patients and hemodialysis all lead to frequent staphylococcal bacteremia.</p>
+    <p>The microbiology of IE in industrialized countries has shifted in recent decades, along with the changes in its epidemiology and predisposing conditions. Gram-positive organisms continue to be the leading cause of IE, but Staphylococcus species now predominate, accounting for 30% to 40% of all infections.<sup>1</sup> <em>S. aureus</em> is a virulent pathogen, with a predilection for metastatic complications, particularly stroke, relatively acute infections, and high associated mortality. Methicillin-resistant <em>Staphylococcus aureus</em> (MRSA) now accounts for almost 15% of IE cases in the United States, and is more common in hemodialysis, IDU, and healthcare-associated infection. The skin commensal coagulase-negative Staphylococcus species, which are often methicillin-resistant and adhere well to prosthetic material, are more common in early PVE and hemodialysis-associated infection. Streptococcus species, including oral commensals belonging to the viridans group, remain the leading IE etiology in developing countries. <em>Streptococcus bovis</em> IE is associated with underlying gastrointestinal malignancies. <em>Enterococcus faecalis</em> causes both PVE and native valve infection, primarily in elderly and debilitated patients. Streptococcus and Enterococcus infections tend to cause classic, indolent, subacute endocarditis.</p>
+    <p>The remaining IE etiologies together account for about 15% of cases, and frequently produce initially negative blood cultures. The group of fastidious gram-negative bacteria, termed HACEK—<i>Haemophilus</i> spp., <i>Aggregatibacter actinomycetemcomitans</i>, <i>Cardiobacterium hominis</i>, <i>Eikenella corrodens</i>, and <i>Kingella kingae</i>—can often be isolated within 5 days in modern blood culture systems.<sup>9</sup> Zoonotic etiologies include <i>Coxiella burnetii</i> (Q fever) and <i>Brucella</i> species from livestock, and <i>Bartonella</i> species from body lice and cats. Fungal endocarditis, mostly due to <i>Candida</i> and <i>Aspergillus</i> species, is primarily associated with prosthetic valves, IDU, and immunocompromised states.<sup>10</sup> The above organisms are considered typical of, or consistent with, IE, and blood cultures that grow any of these are a key component of the Duke diagnostic criteria (Box 2).</p>
+
+    <div class="box">
+        <div class="box-title">Box 2 <br>Summary of Clinical Duke Criteria for Diagnosis of Infective Endocarditis</div>
+        <ul class="box-li">
+            <li>Definite Endocarditis
+                <ul>
+                    <li>Two major clinical criteria</li>
+                    <li>One major and any three minor clinical criteria</li>
+                    <li>Five minor clinical criteria</li>
+                </ul>
+            </li>
+            <li>Possible Endocarditis
+                <ul>
+                    <li>One major and one or two minor clinical criteria</li>
+                    <li>Three minor clinical criteria</li>
+                </ul>
+            </li>
+            <li>Major Criteria
+                <ul>
+                    <li>Positive Blood Cultures
+                        <ul>
+                            <li>At least 2 sets positive with typical IE pathogen, including:</li>
+                            <ul>
+                                <li><i>Staphylococcus aureus</i></li>
+                                <li>Viridans streptococci species of <i>Streptococcus bovis</i></li>
+                                <li><i>Enterococcus</i> species</li>
+                                <li>HACEK group (see text)</li>
+                            </ul>
+                            <li>Or persistent positive blood cultures with an organism consistent with IE</li>
+                            <li>Or single blood culture or serology positive for <i>Coxiella burnetii</i></li>
+                        </ul>
+                    </li>
+                    <li>Evidence of Endocardial Involvement by Echocardiography
+                        <ul>
+                            <li>Pendulum-like vegetation on valve endocardium</li>
+                            <li>Paravalvular abscess</li>
+                            <li>Prosthetic valve dehiscence</li>
+                            <li>New valvular regurgitation</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Minor Criteria
+                <ul>
+                    <li>Predisposition—predisposing heart condition or intravenous drug use</li>
+                    <li>Fever—temperature greater than 38&deg;C (100.4&deg;F)</li>
+                    <li>Vascular phenomena—arterial emboli, septic pulmonary infarcts, mycotic aneurysm, conjunctival hemorrhages, or Janeway lesions</li>
+                    <li>Immunologic phenomena—glomerulonephritis, Osler’s nodes, Roth’s spots, and rheumatoid factor</li>
+                    <li>Microbiologic evidence—positive blood culture not meeting major criteria</li>
+                    <li>Echocardiographic findings—consistent with endocarditis but do not meet major criteria</li>
+                </ul>
+            </li>
+        </ul>
+    </div>    
+    <p>The concept of subacute versus acute infection is no longer used to classify IE. Rather, IE is now classified by the type of valve and by the setting in which it is acquired. Categories include native valve versus prosthetic valve; community-associated versus healthcare-associated (which is sub-classified as nosocomial or community onset); IDU-associated; and intra-cardiac device-associated. PVE is sub-classified as early (&le;12 months) or late.</p>
+    <p>Cardiac and embolic complications develop over time as the infected vegetation grows. Valve leaflet distortion and destruction leads to regurgitant flow and impaired cardiac function. Aortic valve involvement carries the highest risk of clinical heart failure from acute aortic insufficiency. Bacterial invasion of the myocardium can lead to abscess formation and conduction blocks. Friable, infected material can embolize from left-sided vegetations, causing downstream tissue infarction, metastatic abscess, mycotic aneurysm, or immune complex deposition. The cerebral circulation is the most frequent site of large vessel embolization, and hemorrhagic transformation of the infarct is common. Right-sided endocarditis produces septic pulmonary emboli.</p>
+</div>
+<div class="section">
+    <h3>Clinical Features and Differential Diagnosis</h3>
+    <p>Symptoms of IE are nonspecific and diverse (Box 3). Patients often appear relatively well. However, depending on host factors, location of the vegetation, and microbial virulence, some present acutely ill with sepsis and multi-organ failure. The most common symptom is fever (90%). The list of additional possible symptoms includes chills, malaise, weight loss, cough, dyspnea, chest pain, headache, myalgias, arthritis, back or neck pain, altered mental status, or a focal neurologic complaint. A measured fever is present in the ED in about 80% of patients with IE. Since a new murmur, or worsening of a preexisting murmur, is present in only 68% of patients, often no murmur will be heard in the ED. In approximately 30% of cases, the primary presenting syndrome represents a complication of IE, including acute heart failure, stroke, septic pulmonary emboli, and vertebral osteomyelitis.<sup>5</sup></p>
+    <div class="box">
+        <div class="box-title">Box 3 <br>Presenting Clinical Syndromes and Findings in Infectious Endocarditis</div>
+        <ul class="box-li">
+            <li>Syndromes
+                <ul>
+                    <li>Mild and nonspecific febrile illness</li>
+                    <li>Acute heart failure</li>
+                    <li>Focal neurological deficit from septic cerebral embolus</li>
+                    <li>Altered mental status</li>
+                    <li>Axial spine pain from osteomyelitis</li>
+                    <li>Pneumonia from septic pulmonary emboli</li>
+                </ul>
+            </li>
+            <li>Findings
+                <ul>
+                    <li>Heart murmur</li>
+                    <li>Splinter hemorrhages</li>
+                    <li>Cardiac device pocket inflammation</li>
+                    <li>Janeway lesions, Osler’s nodes</li>
+                    <li>Roth spots</li>
+                    <li>Splenomegaly</li>
+                    <li>Anemia</li>
+                    <li>Glomerulonephritis</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    <p>With such a broad range of possible presentations, IE can easily be mistaken for another infection, such as a viral syndrome, meningitis, or pneumonia, particularly common with right-sided IE and septic pulmonary emboli. It can also present similarly to a non-infectious problem, such as acute coronary syndrome, primary heart failure, or stroke. In these cases, fever may be the key sign prompting consideration of IE.</p>
+    <p>The most important clue to the diagnosis of IE is the presence of a predisposing condition (see Box 1). If IE is suspected, a core temperature should be correctly measured to assess for fever, multiple times if necessary, and a particularly careful cardiac auscultatory exam performed. Peripheral embolic and vasculitic stigmata should be sought (see Box 2), although each is found in only about 5% of cases, with splinter hemorrhages being the most commonly seen (Fig. 1).</p>
+    <img src="/images/f69-01-9780323757898.jpg" alt="Figure 1" width="686px" height="915px">
+    <h5>Fig 1: Splinter hemorrhage on the great toe in a patient with aortic valve Streptococcus bovis infectious endocarditis.<br>Courtesy of Gene Hern, MD.</h5>
+</div>
+<div class="section">
+    <h3>Diagnostic Testing</h3>
+    <p>Findings on standard laboratory tests in IE are nonspecific. Clinicians must consider IE when faced with a constellation of suggestive findings rather than looking for a single definitive test. Normocytic anemia and hematuria and proteinuria, suggesting glomerulonephritis, are classic findings in indolent infections. An elevated erythrocyte sedimentation rate and C-reactive protein are expected in roughly 60% of cases. A chest x-ray may show signs of heart failure or septic pulmonary emboli, and an electrocardiogram (ECG) may display conduction abnormalities related to a myocardial abscess.</p>
+    <p>When IE is suspected, it is the responsibility of the emergency clinician to ensure that blood cultures are obtained prior to administering antibiotics. Blood culture results are key to both definitive diagnosis and tailored antimicrobial therapy. At least two sets, each containing 10 cc of blood, should be drawn from separate sites and, if possible, separated in time by at least one hour. Three sets of blood cultures are required in suspected PVE or cardiac device-related infection because one of the most common pathogens in prosthetic device infections, coagulase-negative <em>S. aureus</em> , is also the most common blood culture contaminant.</p>
+    <p>Echocardiography is the other key diagnostic test in IE. Transthoracic echocardiography (TTE) should be performed as soon as possible whenever IE is suspected. While the diagnostic sensitivity of TTE for one of the definitive endocardial findings of IE (see Box 2) is no more than 70%, its specificity is very high. Hence, this noninvasive test stands to make the correct diagnosis very rapidly while the patient is still in the ED. More importantly, echocardiography can identify endocardial complications that may require urgent surgery, including acute valvular insufficiency or perforation with heart failure, perivalvular extension, prosthetic valve dehiscence, and vegetation size greater than 10 mm, which presents an elevated embolic risk (Box 4).<sup>5,11</sup> The sensitivity of transesophageal echocardiography (TEE) is significantly higher than that of TTE, both for identifying vegetations and assessing for complications, particularly in PVE.</p>
+    <div class="box">
+        <div class="box-title">Box 4 <br>Summary of Indications for Surgical Treatment for Infective Endocarditis</div>
+        <ul class="box-li">
+            <li>Aortic or mitral insufficiency with ventricular failure</li>
+            <li>Valve perforation or rupture</li>
+            <li>Perivalvular extension, abscess, fistula, associated heart block</li>
+            <li>Prosthetic valve dehiscence</li>
+            <li>Less than 10 mm vegetation on the anterior mitral leaflet</li>
+            <li>Recurrent embolization or persistent bacteremia on therapy</li>
+        </ul>
+    </div>    
+    <p>TEE is now recommended after TTE in all cases, though this invasive modality will usually be performed after hospital admission. The value of point of care TTE, performed immediately by experienced emergency clinicians in the setting of suspected IE, has been demonstrated in numerous case reports, although its role has yet to be evaluated in a large study (Fig. 2).<sup>12</sup></p>
+    <img src="/images/f69-02-9780323757898.jpg" alt="Figure 2" width="686px" height="558px">
+    <h5>Fig 2: Large mitral valve vegetation as seen on ED point of care ultrasound, apical 4 chamber view. <em>LA</em>, Left atrium; <em>LV</em>, left ventricle; <em>RA</em>, right atrium; <em>RV</em>, right ventricle.<br>
+        Courtesy of Highland Emergency Ultrasound Division.</h5>
+    <p>Additional advanced imaging in patients with suspected IE should generally be driven by symptoms. Some advocate routine brain magnetic resonance imaging (MRI) in uncertain cases, even without neurological symptoms, because asymptomatic cerebral emboli are found in up to 60% of those with left-sided infection, and this finding constitutes a Duke minor criteria.</p>
+</div>
+<div class="section">
+    <h3>Management</h3>
+    <p>In the sickest subset of IE patients, ED management begins with stabilization, including evidence-based therapy for sepsis, hemodynamic support, and positive pressure ventilation. Patients with suspected IE and acute heart failure require immediate consultation by a cardiothoracic surgeon, and emergency clinicians need to be aware of additional echocardiographic findings that are indications for surgical therapy (see Box 4). In general, there has been a shift toward earlier surgical treatment in IE, with approximately one-half of patients with left-sided infection undergoing surgery during the index admission.<sup>9</sup> If possible, patients with left-sided IE should be managed by a multidisciplinary team at a center capable of cardiothoracic surgery.</p>
+    <p>In the ED, initial antimicrobial treatment of IE is almost always empiric. Occasionally, patients present because previously drawn blood cultures have returned positive; in such cases, isolate susceptibility-directed antibiotics should be selected in consultation with an infectious disease specialist. Consensus guidelines on IE treatment tend to focus on pathogen-specific therapy, with limited discussion or recommendations regarding empiric treatment.<sup>5,13</sup> Patient characteristics to consider in choosing the empiric regimen include whether there is a prosthetic valve, history of IDU, or recent health care exposure, as well as disease severity. If available, hospital-specific empiric treatment recommendations, which account for local susceptibility patterns and are updated regularly, supersede published guidelines, which are updated infrequently.</p>
+    <p>In most cases, empiric therapy in the ED should include vancomycin (20 to 35 mg/kg actual body weight loading dose, then 15 to 20 mg/kg every 8 to 12 hours not to exceed 3000 mg). Vancomycin alone for one or two doses is a reasonable approach for native valve and prosthetic valve infection and in IDUs. Addition of ceftriaxone (2 g/day) can be considered to cover HACEK and other gram-negative organisms, responsible for less than 6% of infections.<sup>1,5</sup> As soon as blood culture results return, pathogen and susceptibility-directed therapy is selected by an infectious disease specialist. Because of the complex pathology of bacterial growth within vegetations, 4 to 6 weeks of parenteral antibiotic therapy is generally required to eliminate infection. For selected stable patients who respond well to initial therapy in the hospital, IV treatment can be completed as an outpatient. Protocols that include partial oral therapy have recently proven effective and safe.<sup>14</sup></p>
+</div>
+<div class="section">
+    <h3>Disposition</h3>
+    <p>All patients with suspected IE, in whom blood culture results are pending, should be hospitalized. Increasingly, for selected stable patients who respond well to initial treatment in the hospital, IV antibiotic therapy can be completed at home.</p>
+</div>
+<div class="section">
+    <h3>Prophylaxis</h3>
+    <p>The American Heart Association and European Society of Cardiology recommend antibiotic prophylaxis to prevent IE for individuals with very high-risk predisposing conditions before undergoing procedures that produce heavy bacteremia with potential IE pathogens. These primarily consist of dental procedures. High-risk predisposing conditions include a prior history of IE, certain forms of congenital heart disease (see previous) and the presence of a prosthetic valve. This issue is of limited relevance to emergency practice, since most commonly performed ED procedures do not produce the kind of bacteremia that requires prophylaxis—including local anesthesia injection into uninfected tissue, laceration repair, endotracheal intubation, and foley catheter placement in the absence of infection. Prophylaxis should be administered prior to cutaneous abscess drainage, however. A reasonable approach is to administer IV vancomycin (15 mg/kg) one hour before incision and drainage.</p>
+</div>
+<div class="section">
+    <h2>RHEUMATIC FEVER</h2>
+    <h3>Foundations</h3>
+    <h4>Background and Importance</h4>
+    <p>From 1920 to 1950, acute rheumatic fever (ARF) was the leading cause of death in United States children and the most common cause of heart disease in individuals younger than age 40 years. During the 1960s and 1970s, the incidence of ARF in the United States and other developed countries declined dramatically because of widespread antibiotic treatment of streptococcal infections, the declining prevalence of the more virulent strains of group A streptococci, and improved hygiene and living conditions. In many developing nations, however, ARF continues to be a leading cause of childhood mortality. Children 4 to 9 years of age remain at greatest risk, with an annual incidence of ARF of 2 to 14 cases/100,000. Chronic rheumatic heart disease (RHD), a consequence of ARF, peaks in adults between the ages of 25 and 34 years. There are an estimated 34 million people worldwide living with RHD.15</p>
+    <h4>Pathophysiology</h4>
+    <p>ARF is a delayed nonsuppurative complication of streptococcal pharyngitis. ARF is thought to result from an exaggerated immunologic response to group A beta-hemolytic streptococci—antibodies cross-reacting with tissues in the heart, joints, skin, and central nervous system. Patients with a history of ARF are predisposed to recurrent Strep infections, and repeated infections lead to progressive heart damage.</p>
+</div>
+
+<div class="section">
+    <h3>Clinical Features and Differential Diagnosis</h3>
+    <p>ARF occurs 1 to 5 weeks after the initial bout of pharyngitis. Up to one-third of patients with documented ARF do not remember having had pharyngitis in the preceding month. Fever is generally present during the acute phase of rheumatic fever, rarely lasting more than 2 weeks. Additional manifestations include arthritis, carditis, chorea, subcutaneous nodules, and erythema marginatum (see Box 4).</p>
+    <p>A syndrome of mono- or poly-articular arthralgias and arthritis is the most common finding in ARF. Arthritis tends to occur early in the course of ARF and often coincides with a rising titer of streptococcal antibodies. It classically affects large joints, such as the knee, ankle, elbow, and wrist. The pain may be more severe than physical findings suggest (severe arthralgias). Synovial fluid analysis generally reveals a sterile inflammatory fluid.</p>
+    <p>Cardiac manifestations of ARF may be subtle and can include symptoms and signs of pericarditis, myocarditis, and endocarditis. The mitral valve is the most commonly affected, causing acute mitral regurgitation (MR). Inflammation of the valvular endocardium may result in permanent deformity and impairment of one or more valves over the course of decades. Stenotic lesions of the mitral and/or aortic valve are common late manifestations of RHD (Fig. 3).</p>
+    <img src="/images/f69-03-9780323757898.jpg" alt="Figure 3" width="686px" height="479px">
+    <h5>Fig 3: Erythema Marginatum.<br>
+        This is one form of annular erythema seen in 10% of cases of children with acute rheumatic fever but is rare in adults with the disease.<br>
+        From Cohen J, Powderly WG. <em>Infectious Diseases</em>. 2nd ed. New York: Mosby; 2004.</h5>
+    <p>Chorea is a random, rapid, purposeless movement, usually of the upper extremities and face. Chorea is a relatively rare manifestation of ARF that tends to emerge after a long latency period. Subcutaneous nodules and erythema marginatum are found in fewer than 10% of cases of ARF. Their presence, however, should suggest the diagnosis. Subcutaneous nodules are pea-sized and nontender. They typically appear over the extensor surfaces of the wrists, elbows, knees and, occasionally, the spine. Erythema marginatum is a nonpruritic, painless, evanescent ring of erythema that commonly appears on the trunk and proximal extremities (see Fig. 3).</p>
+</div>
+<div class="section">
+    <h3>Diagnostic Testing</h3>
+    <p>Diagnosis of ARF is clinical, based on the presence of the characteristic manifestations plus evidence of antecedent streptococcal infection. In 1944, Jones formulated major and minor criteria for the diagnosis of ARF, which, in revised form, remain the basis for making the diagnosis (Box 5).<sup>16</sup> Throat cultures are usually negative at the time of clinical onset of ARF, but antistreptolysin antibody titers remain positive for 4 to 6 weeks from the time of infection. The erythrocyte sedimentation rate and C-reactive protein levels are typically elevated, and a prolonged PR interval is common and suggestive in ARF.</p>
+    <div class="box">
+        <div class="box-title">Box 5 <br>Jones Criteria (Revised) for the Diagnosis of Acute Rheumatic Fever</div>
+        <ul class="box-li">
+            <li>Major Manifestations
+                <ul>
+                    <li>Carditis</li>
+                    <li>Polyarthritis</li>
+                    <li>Chorea</li>
+                    <li>Erythema marginatum</li>
+                    <li>Subcutaneous nodules</li>
+                </ul>
+            </li>
+            <li>Minor Manifestations
+                <ul>
+                    <li>Arthralgias</li>
+                    <li>Fever</li>
+                    <li>Increased erythrocyte sedimentation rate or C-reactive protein level</li>
+                    <li>Prolonged PR interval</li>
+                </ul>
+            </li>
+            <li>Evidence of Preceding Streptococcal Infection
+                <ul>
+                    <li>Positive throat culture for group A beta-hemolytic streptococci or positive rapid streptococcal antigen test</li>
+                    <li>Elevated or rising streptococcal antibody titer, usually antistreptolysin O</li>
+                </ul>
+            </li>
+        </ul>
+    </div>    
+</div>
+
+<div class="section">
+    <h3>Management and Disposition</h3>
+    <p>All patients with ARF should receive antibiotic therapy, regardless of the clinical history of pharyngitis. Penicillin can be administered orally (250 mg for patients less than 28 kg, 500 mg for patients 28 kg and above, BID or TID for 10 days) or intramuscularly (600,000 units of penicillin B for patients less than 28 kg, 1.2 million units for patients 28 kg and above, as a one-time dose).</p>
+    <p>Treatment for arthritis consists of anti-inflammatory agents, usually aspirin, administered until symptoms resolve and the erythrocyte sedimentation rate and C-reactive protein concentration normalize. Patients with severe carditis are often treated with corticosteroids, but no evidence supports this treatment. Patients with congestive heart failure should be managed accordingly. Treatment is aimed at symptom relief and unfortunately does not decrease the likelihood of progression to RHD. Primary prevention involves treating those with group A streptococcal pharyngitis within nine days of the onset of symptoms, which decreases the risk of ARF. Following ARF, patients should receive prophylactic antibiotics (generally, penicillin) for up to 10 years, depending on the severity of carditis, to prevent recurrences.</p>
+</div>
+<div class="section">
+    <h2>VALVULAR HEART DISEASE</h2>
+    <h3>Foundations</h3>
+    <h4>Anatomy and Physiology</h4>
+    <p>There are four heart valves, three of which (tricuspid, pulmonic and aortic) are tricuspid, while the mitral valve is bicuspid. Each cusp is formed from a double layer of endocardium attached at its base to the fibrous skeleton of the heart. For the tricuspid and mitral valves, muscular projections from the ventricles (papillary muscles) merge with tendinous cords (chordae tendineae) which extend from the edges of the cusps. Contraction of the ventricle leads to contraction of the papillary muscles, resulting in the opening or closing of the valve.</p>
+    <h4>Mitral Stenosis</h4>
+    <p>The most common cause of mitral stenosis (MS) worldwide is RHD, a decades-delayed complication of ARF and carditis of the mitral valve. In the developed world, mitral annular calcification leading to degenerative valvular disease in the elderly is the most common etiology of MS.<sup>17</sup> Though uncommon, MS can also be a congenital condition.</p>
+    <h4>Pathophysiology</h4>
+    <p>The normal cross-sectional area of the mitral valve orifice is 4 to 6 cm<sup>2</sup> . Stenosis becomes clinically significant when the area decreases to below 1.5 cm<sup>2</sup> , or 1 cm<sup>2</sup> /m<sup>2</sup> body surface area in larger patients. As the valve narrows, impeded inflow from the left atrium to the left ventricle results in decreased preload, decreased cardiac output, left atrial hypertension and, ultimately, pulmonary congestion. As the disease progresses, patients may develop pulmonary hypertension, right ventricular hypertrophy, and right ventricular failure.</p>
+    <p>The most common complication of MS is atrial fibrillation due to left atrial dilation. Atrial fibrillation leads to decreased atrial contraction and decreased diastolic filling with subsequently decreased cardiac output. Patients with underlying MS may also decompensate in the setting of pregnancy, anemia, infection, and hyperthyroidism, conditions that increase cardiac demand and decrease ventricular filling. Finally, right ventricular failure may cause left ventricular dysfunction due to chronic preload reduction and impaired contractility over time.</p>
+</div>
+<div class="section">
+    <h3>Clinical Features</h3>
+    <p>Early symptoms of MS include decreased exercise tolerance and dyspnea on exertion. Patients with more advanced disease may have orthopnea and peripheral edema. Embolic events from atrial fibrillation may be the initial presenting feature. Hemoptysis from rupture of a bronchial vein, and hoarseness, caused by compression of the recurrent laryngeal nerve, are classic but uncommon presentations. Chest pain or discomfort is not a typical feature of MS.</p>
+    <p>Aside from the typical signs of heart failure, findings that suggest the presence of MS include a loud S1 and an opening snap in early diastole, accompanied by a low-pitched, rumbling, decrescendo diastolic murmur, best heard at the apex.</p>
+    <p>The chest x-ray may be normal, or cephalization of pulmonary vascular flow or pulmonary vascular congestion may be observed. Left atrial enlargement may be suggested by straightening of the left heart border in more advanced cases. ECG may demonstrate atrial fibrillation along with signs of left atrial enlargement or right ventricular hypertrophy. Echocardiography is the preferred method of diagnosis and assessment of disease severity <sup>18,19</sup>  (Fig. 4). TTE is often sufficient for routine care,<sup>20</sup> however TEE typically provides more detailed information on valve morphology and evaluates for concomitant left atrial thrombus.</p>
+    <img src="/images/f69-04-9780323757898.jpg" alt="Figure 4" width="686px" height="982px">
+    <h5>Fig 4: Transthoracic echocardiography of symptomatic rheumatic mitral stenosis (∗represents a thickened anterior mitral leaflet). <em>Ao</em>, Aorta; <em>LA</em>, left atrium; <em>LV</em>, left ventricle; <em>RV</em>, right ventricle.<br>
+        From Marijon E, Mirabel M, Celermajer DS, Jouven X. Rheumatic heart disease. <em>Lancet</em>. 2012;379:953–964.</h5>
+</div>
+<div class="section">
+    <h3>Management</h3>
+    <p>Acute stabilization in the ED begins with identification and treatment of underlying precipitants, such as anemia or infection. Symptoms of vascular congestion (pulmonary and peripheral) are treated with diuresis. Rate control and anticoagulation are important if secondary atrial fibrillation is present. With long term medical management alone, 5-year survival rates with MS are 47%.<sup>21</sup></p>
+    <p>Definitive surgical interventions include percutaneous and open approaches. Symptomatic severe MS is most commonly treated with percutaneous transvenous mitral commissurotomy, also known as percutaneous balloon valvulotomy, when valve anatomy is favorable, and when there is an absence of left atrial thrombus and moderate-severe regurgitation.<sup>18,19</sup> Surgical mitral valve replacement is considered based on surgical expertise, specific valve characteristics and patient comorbidities.</p>
+</div>
+<div class="section">
+    <h3>Mitral Regurgitation</h3>
+    <p>MR is the most prevalent valvular disease worldwide.<sup>22</sup> Primary MR is caused by degenerative disease, RHD, IE, mitral valve prolapse (MVP) in connective tissue disease, and acute papillary muscle rupture, all leading to direct dysfunction of the valve leaflets or support structures (the annulus, chordae or papillary muscles) themselves. Secondary MR is caused by left ventricular enlargement and remodeling due to coronary artery disease or other cardiomyopathy, which over time distorts the architecture of the support structures and leads to secondary valve dysfunction.</p>
+</div>
+<div class="section">
+    <h3>Pathophysiology</h3>
+    <p>MR causes retrograde flow of blood from the left ventricle to the left atrium during systole. Pathophysiology differs between acute and chronic presentations. Acute MR, as results from papillary muscle rupture secondary to myocardial infarction, is characterized by a sudden decrease in afterload, low left atrial compliance and sharply elevated left atrial pressure, resulting in acute pulmonary vascular congestion. Chronic MR, as results from cardiomyopathy, is characterized by stable afterload in the setting of cardiac remodeling, progressively increased left atrial compliance and near-normal left atrial pressures, resulting in preserved cardiac output—until the point at which decompensation ensues. Acute MR is a true cardiac emergency, whereas chronic MR may be occult and go undetected for many years.</p>
+</div>
+<div class="section">
+    <h3>Clinical Features</h3>
+    <h4>Acute Mitral Regurgitation</h4>
+    <p>Acute MR presents as severe dyspnea, acute pulmonary edema, or cardiogenic shock, typically in a patient with no prior history of heart failure. Classically a harsh, high pitched midsystolic murmur can be heard, loudest at the apex. Radiation is usually to the axilla but depends on the direction of the regurgitant jet. In severe acute MR, there may be an S3 and a short diastolic rumble.</p>
+    <p>The chest x-ray usually demonstrates unilateral or bilateral pulmonary edema. The ECG may show signs of ischemia or infarction, including Q waves, ST-T changes and left bundle branch morphology. ED point of care TTE establishes a cardiogenic cause of acute dyspnea with high sensitivity/specificity,<sup>23</sup> and experienced ED sonographers can identify an MR jet (Fig. 5). Comprehensive echo will identify the incompetent valve, regurgitant flow, and papillary muscle rupture, if present, in addition to decompensated heart failure.</p>
+    <img src="/images/f69-05-9780323757898.jpg" alt="Figure 5" width="686px" height="439px">
+    <h5>Fig 5: Transthoracic echocardiography (apical four chamber view) of mitral regurgitation (∗represents mitral regurgitant jet). <em>LA</em>, Left atrium; <em>LV</em>, left ventricle; <em>RA</em>, right atrium; <em>RV</em>, right ventricle.<br>
+        Courtesy of Highland Emergency Ultrasound Division.</h5>
+    <h4>Chronic Mitral Regurgitation</h4>
+    <p>The presentation of chronic MR is similar to that of chronic systolic heart failure, with clinical symptoms and signs of vascular congestion. The chronic MR murmur is classically described as holosystolic, heard best at the apex and radiating to the axilla. There may be a S3 present.</p>
+    <p>The chest radiograph may suggest left atrial enlargement. Atrial fibrillation is common, and the ECG often demonstrates left atrial and ventricular hypertrophy. Echocardiography may show a normal or above-normal ejection fraction, but some portion of systolic flow is retrograde. TEE is the preferred diagnostic modality to evaluate valve anatomy and size and direction of the regurgitant jet. Increasingly, 3D TEE is being used to grade disease severity and guide valve replacement.<sup>24</sup></p>
+</div>
+<div class="section">
+    <h3>Management</h3>
+    <p>When the diagnosis of acute MR is suspected, emergency echocardiography and right heart cardiac catheterization should be pursued to assess the degree of regurgitation and urgency for surgery. Initial stabilization in the ED includes treatment of pulmonary edema with intravenous nitrates, diuretics and noninvasive positive pressure ventilation (CPAP or BiPAP). Norepinephrine is the first-line vasopressor for hypotensive patients, and once the blood pressure is supported with a mean arterial pressure of at least 65 mm Hg, inotropic support with dobutamine can be added for patients with persistent hypoperfusion. In a persistently hypotensive patient who does not respond to vasopressor and inotropic therapy, an intraaortic balloon pump (IABP) may stabilize the patient and provide a bridge to valve replacement surgery. A small subset of patients may improve and stabilize without surgical intervention, however rates of secondary pulmonary hypertension in this population are high. In cases of acute MR from inferolateral myocardial infarction, coronary artery revascularization can lead to complete resolution of MR.</p>
+    <p>Chronic symptomatic MR is managed with afterload reducing agents angiotensin-converting enzyme [ACE] inhibitors and angiotensin II receptor blockers [ARB], and beta blocking agents are first-line therapy), and diuretics to prevent progression of left ventricular (LV) failure.<sup>19</sup> A long period of medical therapy and annual echocardiographic monitoring is the norm, with 15-year survival approaching 70% with medical therapy alone. Once the left ventricular ejection fraction (LVEF) falls below 60%, valve repair or replacement is recommended to avoid irreversible left ventricular dysfunction. Open valve repair or replacement remains the surgical treatment of choice in most cases. Recent studies support the use of transcutaneous mitral valve repair (MitraClip) for carefully selected patients with primary MR.<sup>19</sup></p>
+</div>
+<div class="section">
+    <h3>Mitral Valve Prolapse</h3>
+    <p>MVP is a form of abnormal mitral valve leaflet movement during systole. It may be inherited or sporadic. Epidemiological studies report a prevalence of approximately 2% to 3% worldwide.<sup>25</sup> While usually a benign condition, MVP can result in MR and rarely other complications.</p>
+    <h3>Pathophysiology</h3>
+    <p>MVP is characterized by myxomatous proliferation of the middle spongiosa layer of the valve leaflet, resulting in abnormal billowing of one or both leaflets into the left atrium during systole. MVP is usually an isolated primary disorder, but may be associated with connective tissue disorders, particularly Marfan and Ehlers-Danlos syndromes. Most patients with MVP have no or mild MR, however severe MR occurs in up to 10% of patients with MVP.<sup>26</sup> The most frequent complications of MVP are progressive MR (resulting in need for valve replacement), atrial fibrillation, heart failure and endocarditis.</p>
+    <h3>Clinical Features</h3>
+    <p>MVP is associated with a wide variety of clinical symptoms, from asymptomatic to palpitations, chest pain, dyspnea, lightheadedness, fatigue, and anxiety. A midsystolic click may be heard, caused by snapping of the chordae tendineae with prolapse of the valve. Occasionally a mid to late systolic murmur can be heard over the left lower sternal border. Echocardiography is the primary diagnostic modality.</p>
+    <h3>Management</h3>
+    <p>Patients with MVP should be reassured about the typically benign natural history of the disease. Beta-blockers may be used to control symptoms such as palpitations, chest pain, and anxiety. Lifestyle modifications, such as exercise, relaxation techniques, and avoidance of ethanol, caffeine, and other stimulants may also be helpful.</p>
+</div>
+<div class="section">
+    <h2>AORTIC STENOSIS</h2>
+    <p>The most common cause of aortic stenosis is calcific degeneration, which is prevalent in older adults with atherosclerotic disease. Aortic stenosis also occurs in younger individuals with a bicuspid aortic valve and calcific changes. RHD can lead to atrial stenosis (AS), in which case it may coexist with MS.</p>
+    <h3>Pathophysiology</h3>
+    <p>The normal aortic valve area (AVA) is approximately 3 to 4 cm<sup>2</sup>. Stenosis occurs through an active process of calcification, inflammation, oxidative stress and remodeling. Clinically significant obstruction of outflow from the left ventricle occurs when the AVA decreases by more than 50%.<sup>27</sup> As the valve narrows, increased left ventricular afterload leads to compensatory left ventricular hypertrophy (LVH) to maintain cardiac output. Left ventricular hypertrophy and increased wall tension predispose the patient to cardiac ischemia, even in the absence of significant coronary artery disease. Further progression of disease is associated with left ventricular dysfunction, left atrial enlargement, and atrial fibrillation. In advanced stages, cardiac output decreases while left atrial and pulmonary artery pressures increase, leading to pulmonary hypertension and right heart failure.</p>
+    <p>Severe aortic stenosis is defined by a peak velocity of &ge;4 m/s, a mean pressure gradient (MPG) of &ge;40 mm Hg, or a valve area of less than 1 cm<sup>2</sup>.<sup>18</sup> Up to one-third of patients with severe AS have a preserved ejection fraction.<sup>28</sup> Individuals with severe AS are preload-dependent and have very little cardiovascular reserve. Any disruption of the delicate balance between myocardial oxygen supply and demand (e.g., rapid atrial fibrillation, dehydration, acute blood loss) can result in acute decompensation.</p>
+    <h3>Clinical Features</h3>
+    <p>AS is most commonly diagnosed incidentally on routine physical exam, or on echocardiography as part of a broader cardiology work-up. Symptomatic AS gradually progresses from fatigue, exertional dyspnea, and angina to lightheadedness and exertional syncope, to overt heart failure. In an older patient with chest pain who appears preload dependent in the ED, the possibility of AS, with or without coronary artery disease, should be considered. In addition to the gradual progression of symptoms, patients may also experience acute decompensation due to triggers such as sepsis, anemia, or endocarditis.</p>
+    <p>The classic AS murmur is a crescendo-decrescendo systolic murmur, heard best at the right upper sternal border, radiating into the carotids. An S4 gallop may be present at the apex. As the severity of disease increases, the murmur peaks later and becomes less audible. Carotid pulses may be delayed (tardus) and diminished in intensity (parvus).</p>
+    <p>The chest radiograph is frequently normal except in cases of acute decompensation. In elderly patients with calcific degeneration, valve calcification may be visible and is often associated with a tortuous aorta. ECG typically reveals LVH. Evidence of left atrial enlargement, left axis deviation, left bundle branch block, and atrial fibrillation (in the late stage) may also be present. Echocardiography is the main modality used to diagnose AS and stage severity and can be reliably done in the ED setting.<sup>23,29</sup> AS severity is categorized using three echocardiographic parameters: aortic peak jet velocity (PVel), MPG, and calculated AVA.<sup>18</sup></p>
+    <h3>Management</h3>
+    <p>The natural history of AS is one of slow asymptomatic progression over years to decades. If identified during this latent phase, AS can be managed medically or surgically based on patient preference. Antihypertensives are the only medical therapy recommended by the current American and European guidelines.<sup>27</sup> Statins may slow the rate of aortic calcification, but do not affect the rate of valve narrowing. Once symptoms develop, medical management has a limited role, and survival is markedly reduced unless the valve is replaced. The choice of surgical aortic valve replacement (SAVR) versus transcatheter aortic valve replacement (TAVR) is based on multiple factors, including surgical risk, patient frailty and comorbidity, and patient preference.<sup>30</sup> In high-risk patients, balloon valvuloplasty is feasible and safe as a bridge to valve replacement, but long-term survival is poor with valvuloplasty alone.<sup>31</sup></p>
+    <p>In the ED setting, management of decompensated AS includes judicious fluid resuscitation, blood transfusion and restoration of sinus rhythm, if indicated. Vasodilators, diuretics and inotropic agents should be avoided, if possible. When required, first-line vasopressor support is with phenylephrine or norepinephrine. When there is no response to medical therapy and the patient is a candidate for valve replacement, an IABP may provide a bridge to surgery.</p>
+</div>
+<div class="section">
+    <h2>AORTIC REGURGITATION</h2>
+    <p>Aortic regurgitation (AR) can be caused by disease of the aortic valve leaflets, or by distortion of the anatomy of the aortic root and ascending aorta. Aortic valve leaflet abnormalities are caused by calcific degeneration, a congenital bicuspid valve, infectious endocarditis, or RHD. Processes that affect the aortic root include idiopathic root dilation (ectasia), connective tissue disorders, syphilis, aortic aneurysm and aortic dissection. AR has an estimated prevalence of 4.9% in the Framingham data, with moderate or severe AR found in 0.5%.<sup>32</sup></p>
+    <h3>Pathophysiology</h3>
+    <p>In acute AR, sudden development of AR leads to increased left ventricular end-diastolic pressure, reduced cardiac output, and subsequent acute pulmonary vascular congestion. In contrast, in chronic AR, progressive left ventricle remodeling and dilation allows the heart to maintain near-normal cardiac output despite significant regurgitation. The increased LV volume leads to increased stroke volume, allowing for the maintenance of cardiac output despite regurgitation.</p>
+    <h3>Clinical Features</h3>
+    <p>The clinical presentations of acute and chronic AR are clinically distinct.</p>
+    <h4>Acute Aortic Regurgitation</h4>
+    <p>Patients with acute AR can present with severe respiratory distress and cardiogenic shock, due to rapidly increased end-diastolic volume in the setting of low left ventricular compliance and acute pulmonary vascular congestion.</p>
+    <p>Patients are typically tachycardic, hypotensive, and hypoxic. The pulse pressure may be normal or only slightly widened. A short, soft, diastolic murmur may be present, but often is difficult to detect in the ED setting.</p>
+    <p>Chest x-ray may show pulmonary vascular congestion. The ECG is typically normal, but may show signs of demand ischemia. Emergent echocardiography is required to confirm the diagnosis. Point-of-care ultrasound in the ED using a parasternal long (PSL) axis view can rapidly identify valve failure using color doppler over the valve area to observe the regurgitant jet (Fig. 6).<sup>23</sup> The PSL axis view may also demonstrate a dilated aortic outflow tract suggesting a problem with the aortic root, and the apical four-chamber view may demonstrate a vegetation suggesting endocarditis as the primary etiology (see Fig. 2). Additionally, the suprasternal notch view is easily and rapidly obtainable view of the thoracic aorta which allows accurate visualization of a dissection flap if present.<sup>33</sup></p>
+    <img src="/images/f69-06-9780323757898.jpg" alt="Figure 6" width="686px" height="439px">
+    <h5>Fig 6: Transthoracic echocardiography (parasternal long axis view) of aortic regurgitation (∗represents aortic regurgitant jet). <em>Ao</em>, Aorta; <em>LA</em>, left atrium; <em>LV</em>, left ventricle; <em>RV</em>, right ventricle.<br>
+        Courtesy of Highland Emergency Ultrasound Division.</h5>
+    <h4>Chronic Aortic Regurgitation</h4>
+    <p>Chronic AF tends to have a prolonged asymptomatic period, after which a patient develops dyspnea on exertion due to increased LV end-diastolic pressures and anginal symptoms due to decreased aortic diastolic pressure and increased oxygen demand.</p>
+    <p>Chronic AR is characterized by a wide pulse pressure. The point of maximal impulse is typically displaced and sustained. A high-pitched, blowing, diastolic murmur at the left lower sternal border is usually present. Classic physical findings of severe AR include a rapidly rising and falling carotid pulse (water hammer, or Corrigan’s, pulse), head bobbing due to exaggerated carotid pulsations (Musset’s sign), spontaneous nail bed pulsations (Quincke’s sign), or a bruit over the femoral artery (Duroziez’s sign). An Austin-Flint murmur—a soft mid-diastolic rumble caused by a regurgitant stream against the anterior leaflet of the mitral valve—may also be present when auscultating the apex.</p>
+    <p>The chest radiograph may show cardiomegaly, and pulmonary vascular congestion in advanced or decompensated AR. The ECG usually demonstrates LVH. Echocardiography provides a definitive diagnosis, and is used to evaluate valve anatomy, and aortic root and ascending aortic dimensions, as well as LV size and function. Echocardiography can also determine the feasibility of valve or root repair.</p>
+    <h3>Management</h3>
+    <p>Acute AR is a surgical emergency necessitating urgent valve replacement, along with repair of any underlying aortic root pathology. Medical stabilization involves the cautious use of short-acting vasodilators (nitroprusside, nicardipine, or clevidipine) and diuretics. Use of an IABP is contraindicated in the setting of an incompetent aortic valve. Often, diagnosis and management of the underlying aortic dissection or IE must be undertaken simultaneously. For aortic dissection complicated by AR, beta-blocker therapy should be used with caution.</p>
+    <p>Chronic AR is managed like other types of decompensated heart failure, with emphasis on diuresis, as well as preload and afterload reduction, to prevent worsening left ventricular function and avoid aortic complications if an aneurysm is present. Ideally, valve repair or replacement should be performed before the development of left ventricular systolic dysfunction. Chronic severe AR has a yearly mortality of 10% to 20% without surgical treatment.</p>
+    <h3>Complications of Prosthetic Valves</h3>
+    <p>Prosthetic heart valves may be mechanical or biologic. Biologic valves include whole valve transplants (human or porcine) as well as bioprosthetic valves, typically manufactured from bovine pericardium. All prosthetic heart valves are associated with complications, ranging from structural failure and thrombosis to systemic embolization, hemolysis, and endocarditis (Box 6). In the acute setting, the diagnosis of a prosthetic valve complication can be challenging because symptoms and signs are often subtle.</p>
+    <div class="box">
+        <div class="box-title">Box 6 <br>Prosthetic Valve Complications</div>
+        <ul class="box-li">
+            <li>Structural failure</li>
+            <li>Valve thrombosis</li>
+            <li>Systemic embolization</li>
+            <li>Hemolysis</li>
+            <li>Endocarditis</li>
+        </ul>
+    </div>    
+    <h3>Structural Failure</h3>
+    <p>Primary structural failure is extremely uncommon with modern mechanical valves. When it does occur, the presentation is one of acute severe regurgitation and shock, and emergent valve replacement is required. With biologic valves, structural failure is more common but less dramatic. At 10 years, 20% to 30% of bioprosthetic valves exhibit some evidence of structural failure, and most are replaced electively. Symptoms are characteristically insidious in onset and are similar to those of native valvular disease.</p>
+    <h3>Valve Thrombosis</h3>
+    <p>Prosthetic valve thrombosis occurs with both mechanical and biologic valves. When appropriately anticoagulated, mechanical valves have thrombotic complications at a similar rate (∼2%/year) as biologic valves. Patient compliance with oral anticoagulation therapy therefore is an important consideration when evaluating for thrombotic and embolic complications. Symptoms of prosthetic valve thrombosis are generally subacute and may have characteristics of stenotic disease, regurgitant disease, or both. On physical examination, the diagnosis is suggested by a decreased or absent valve click, new regurgitant murmur, or louder than expected stenotic murmur. Echocardiography may demonstrate the thrombus or restricted leaflet motion. Treatment options include fibrinolytic therapy and surgery.</p>
+    <h3>Systemic Embolization</h3>
+    <p>The incidence of systemic embolization from a prosthetic valve is approximately 1%/year. Compared with aortic valve prostheses, mitral valve prostheses are associated with twice the risk of systemic embolization, with rates roughly equal for an appropriately anticoagulated mechanical mitral valve and a bioprosthetic valve. The vast majority of diagnosed embolic events (85%) involve the central nervous system and roughly 50% of these result in permanent impairment.</p>
+    <h3>Hemolysis</h3>
+    <p>Mild hemolytic anemia resulting from sheer forces across the prosthetic valve is common but usually subclinical. In more severe cases, presenting features include dyspnea, fatigue, and even jaundice. Iron replacement is effective therapy for most patients but transfusion may be required. Worsening hemolysis may be the result of a new periprosthetic leak or other structural failure, which should be evaluated by echocardiography.</p>
+    <h3>Endocarditis</h3>
+    <p>The incidence of PVE is highest during the initial months after surgery and is similar for mechanical and bioprosthetic valves. Early PVE, within 60 days of surgery, is presumed to be caused by a pathogen acquired perioperatively and is associated with relatively high morbidity and mortality, whereas late PVE is more likely due to transient bacteremia and generally has a better prognosis. As with other forms of IE, fever is the most common symptom and systemic embolization is a common presentation. A normal TTE does not rule out PVE, and a TEE is generally required for diagnosis and complete evaluation of the valve. Three sets of blood cultures are recommended to evaluate for PVE. The ED diagnosis of PVE is usually presumptive because definitive diagnosis requires positive blood cultures. Vancomycin is a reasonable initial empiric antibiotic choice, although gentamicin and rifampin are often added for definitive therapy in Staphylococcal PVE. Early consultation with both an infectious disease specialist and cardiothoracic surgeon should be obtained, and transfer to a center with cardiothoracic surgical capabilities should be considered.</p>
+    <h3>Disposition</h3>
+    <p>Patients with acute symptoms related to valvular heart disease should be admitted to the hospital until their condition has stabilized and the cause for their decompensation has been addressed. For patients with stable valvular disease, outpatient cardiology follow-up is recommended.</p>
+</div>
+
+<div class="section">
+    <h2>REFERENCES</h2>
+    <ol>
+        <li>Toyoda N., Chikwe J., Itagaki S., Gelijns A.C., Adams D.H., Egorova N.N.: Trends in infective endocarditis in California and New York State, 1998-2013. J Am Med Assoc 2017; 317: pp. 1652-1660.</li>
+        <li>Pant S., et. al.: Trends in infective endocarditis incidence, microbiology, and valve replacement in the United States from 2000 to 2011. J Am Coll Cardiol 2015; 65: pp. 2070-2076. (Print)</li>
+        <li>Wurcel A.G., Anderson J.E., Chui K.K., et. al.: Increasing infectious endocarditis admissions among young people who inject drugs. Open Forum Infect Dis 2016; 3: pp. ofw157.</li>
+        <li>Hartman L., Barnes E., Bachmann L., Schafer K., Lovato J., Files D.C.: Opiate injection-associated infective endocarditis in the Southeastern United States. Am J Med Sci 2016; 352: pp. 603-608.</li>
+        <li>Habib G., Lancellotti P., Antunes M.J., et. al.: 2015 ESC guidelines for the management of infective endocarditis: the Task Force for the Management of Infective Endocarditis of the European Society of Cardiology (ESC). Endorsed by: European Association for Cardio-Thoracic Surgery (EACTS), the European Association of Nuclear Medicine (EANM). Eur Heart J 2015; 36: pp. 3075-3128.</li>
+        <li>Selton-Suty C., et. al.: Complications and prognosis of infective endocarditis. Presse Med 2019; 48: pp. 532-538. (Print)</li>
+        <li>Cahill T.J., Baddour L.M., Habib G., et. al.: Challenges in infective endocarditis. J Am Coll Cardiol 2017; 69: pp. 325-344.</li>
+        <li>DeSimone D.C., Tleyjeh I.M., Correa de Sa D.D., et. al.: Temporal trends in infective endocarditis epidemiology from 2007 to 2013 in Olmsted County, MN. Am Heart J 2015; 170: pp. 830-836.</li>
+        <li>Wang A.: Statement from the International Collaboration on Endocarditis on the current status of surgical outcome in infective endocarditis. Ann Cardiothorac Surg 2019; 8: pp. 678-680.</li>
+        <li>Pasha A.K., Lee J.Z., Low S.W., Desai H., Lee K.S., Al Mohajer M.: Fungal endocarditis: update on diagnosis and management. Am J Med 2016; 129: pp. 1037-1043.</li>
+        <li>Mohananey D., Mohadjer A., Pettersson G., et. al.: Association of vegetation size with embolic risk in patients with infective endocarditis: a systematic review and meta-analysis. JAMA Int Med 2018; 178: pp. 502-510.</li>
+        <li>Bugg C.W., Berona K.: Point-of-Care ultrasound diagnosis of left-sided endocarditis. West J Emerg Med 2016; 17: pp. 383.</li>
+        <li>Baddour L.M., Wilson W.R., Bayer A.S., et. al.: Infective endocarditis in adults: diagnosis, antimicrobial therapy, and management of complications: a scientific statement for healthcare professionals from the American Heart Association. Circulation 2015; 132: pp. 1435-1486.</li>
+        <li>Iversen K., Ihlemann N., Gill S.U., et. al.: Partial oral versus intravenous antibiotic treatment of endocarditis. New Eng J Med 2019; 380: pp. 415-424.</li>
+        <li>Webb R.H., Grant C., Harnden A.: Acute rheumatic fever. BMJ 2015; 351: pp. h3443.</li>
+        <li>Gewitz M.H., et. al.: Revision of the Jones criteria for the diagnosis of acute rheumatic fever in the Era of Doppler echocardiography: a scientific statement from the American Heart Association. Circulation 2015; 131: pp. 1806-1818.</li>
+        <li>Al‐Taweel A., et. al.: Degenerative mitral valve stenosis: diagnosis and management. Echocardiography 2019; 36: pp. 1901-1909.</li>
+        <li>Baumgartner H., et. al.: 2017 Esc/Eacts guidelines for the management of valvular heart disease. Eur Heart J 2017; 38: pp. 2739-2791.</li>
+        <li>Nishimura R.A., et. al.: 2017 Aha/Acc focused update of the 2014 Aha/Acc guideline for the management of patients with valvular heart disease: a report of the American College of Cardiology/American Heart Association Task Force on clinical practice guidelines. Circulation 2017; 135: e1159–e95</li>
+        <li>Williams C., et. al.: Point-of-care echocardiographic screening for left-sided valve heart disease: high yield and affordable cost in an elderly cohort recruited in primary practice. Echo Res Pract 2019; 6: pp. 71-79.</li>
+        <li>Pasca I., et. al.: Survival in patients with degenerative mitral stenosis: results from a large retrospective cohort study. J Am Soc Echocardiogr 2016; 29: pp. 461-469.</li>
+        <li>Dziadzko V., et. al.: Outcome and undertreatment of mitral regurgitation: a community cohort study. Lancet 2018; 391: pp. 960-969.</li>
+        <li>Levitov A., et. al.: Guidelines for the appropriate use of bedside general and cardiac Ultrasonography in the evaluation of critically ill patients-Part Ii: cardiac Ultrasonography. Crit Care Med 2016; 44: pp. 1206-1227.</li>
+        <li>Faletra F.F., et. al.: 3d transesophageal echocardiography: a new imaging tool for assessment of mitral regurgitation and for guiding percutaneous edge-to-edge mitral valve repair. Prog Cardiovasc Dis 2017; 60: pp. 305-321.</li>
+        <li>Althunayyan A., et. al.: Mitral valve prolapse. Exp Rev Cardiovas Ther 2019; 17: pp. 43-51.</li>
+        <li>Mecarocci V., Mori F.: P210long- term outcome of primary mitral valve prolapse: results from a population of 250 patients referred to a tertiary cardiovascular center. Eur Heart J Cardiovasc Imaging 2016; 17: pp. ii29-ii37.</li>
+        <li>Marquis-Gravel G., et. al.: Medical treatment of aortic stenosis. Circulation 2016; 134: pp. 1766-1784.</li>
+        <li>Messika-Zeitoun D., et. al.: Low-gradient aortic stenosis: solving the conundrum using multi-modality imaging. Prog Cardiovasc Dis 2018; 61: pp. 416-422.</li>
+        <li>Alzahrani H., et. al.: Can severe aortic stenosis be identified by emergency physicians when interpreting a simplified two-view echocardiogram obtained by trained echocardiographers?. Crit Ultrasound J 2015; 7: pp. 18.</li>
+        <li>Tribouilloy C., et. al.: How should very severe aortic stenosis Be defined in asymptomatic individuals?. J Am Heart Assoc 2019; 8: pp. e011724.</li>
+        <li>Costopoulos C., et. al.: Balloon aortic valvuloplasty as a treatment option in the Era of transcatheter aortic valve implantation. Expet Rev Cardiovasc Ther 2015; 13: pp. 457-460.</li>
+        <li>Akinseye O.A., Pathak A., Ibebuogu U.N.: Aortic valve regurgitation: a comprehensive review. Curr Prob Cardiol 2018; 43: pp. 315-334.</li>
+        <li>Kinnaman K.A., et. al.: Evaluation of the aortic arch from the suprasternal notch view using focused cardiac ultrasound. J Emerg Med 2016; 50: pp. 643-650.e1.</li>
+    </ol>    
+</div>
+<div class="section">
+    <h2>QUESTIONS AND ANSWERS</h2>
+    
+    <div class="question">
+        <div class="question-number"><span class="bold">1.</span> What is the most common manifestation of acute rheumatic fever (ARF)?</div>
+        <div class="options">
+            a. Carditis<br>
+            b. Chorea<br>
+            c. Erythema marginatum<br>
+            d. Polyarthritis
+        </div>
+        <div class="answer">Answer: d.</div>
+        <div class="answer-explanation">Arthritis occurs early in the course of ARF. The knees, ankles, elbows, and wrists are commonly affected, and pain can be out of proportion to physical findings. Cardiac manifestations are subtle and may reflect endocarditis, myocarditis, or pericarditis. Chorea and erythema marginatum are rare. Chorea is typically a late finding.</div>
+    </div>
+    
+    <div class="question">
+        <div class="question-number"><span class="bold">2.</span> A 49-year-old woman presents with progressive dyspnea on exertion and orthopnea. Vital signs are temperature 36.7°C (98.1°F; oral), heart rate, 110 beats/min, blood pressure, 135/80 mm Hg, respiratory rate, 22 breaths/min, and oxygen (O2) saturation, 97% on room air. The physical examination is remarkable for clear lung fields and an irregularly irregular rhythm with a 4/6 diastolic murmur in the left anterior axillary line. She has no peripheral edema. Which of the following would be appropriate hemodynamic management of her cardiac pathophysiology?</div>
+        <div class="options">
+            a. Aggressive diuresis<br>
+            b. β1-Agonist to increase chronotropy<br>
+            c. Beta blocker<br>
+            d. Selective arterial vasodilator
+        </div>
+        <div class="answer">Answer: c.</div>
+        <div class="answer-explanation">This patient has a picture consistent with atrial fibrillation and mitral stenosis. The apical diastolic murmur and left atrial enlargement, along with progressive dyspnea, all support the diagnosis. Tachycardia is poorly tolerated because of the need for higher left atrial pressures and a longer time during diastole to perfuse across the stenotic valve. Slow and full are appropriate goals. Diuresis might decrease venous return. Any agent producing tachycardia would decrease diastole time and left ventricular preload. An arterial vasodilator would have little effect, given the normal blood pressure and the fact that systemic vascular dilation would not be seen at the mitral valve level as long as the aortic valve was competent.</div>
+    </div>
+    
+    <div class="question">
+        <div class="question-number"><span class="bold">3.</span> A 32-year-old woman with a history of injection drug use presents with persistent fevers, night sweats, and shortness of breath. Vital signs are temperature 38.2°C (100.8°F; oral), heart rate, 123 beats/min, blood pressure, 105/60 mm Hg, respiratory rate, 26 breaths/min, and oxygen (O2) saturation, 93% on room air. The physical examination is remarkable for scattered rhonchi and a 2/6 systolic murmur in the left lower sternal border. Which of the following is the most appropriate antibiotic to start?</div>
+        <div class="options">
+            a. Clindamycin<br>
+            b. Vancomycin<br>
+            c. Ceftriaxone<br>
+            d. Cefepime
+        </div>
+        <div class="answer">Answer: b.</div>
+        <div class="answer-explanation">In most cases, empiric therapy in the ED should include vancomycin, and vancomycin alone for one or two doses is a reasonable approach for native valve and prosthetic valve infection and in IDUs. Ceftriaxone can be added to vancomycin to cover HACEK and other gram-negative organisms, but these are responsible for less than 6% of infections. There is no role at this time for empiric use of clindamycin or cefepime.</div>
+    </div>
+    
+    <div class="question">
+        <div class="question-number"><span class="bold">4.</span> A 62-year-old man presents 3 days after being admitted for an inferior ST-segment elevation myocardial infarction (STEMI). He underwent a successful percutaneous coronary intervention (PCI) and was just discharged earlier in the day. He developed sudden onset shortness of breath at home, and he arrives in extremis. Vital signs are temperature 37.2°C (98.8°F; oral), heart rate, 112 beats/min, blood pressure, 85/68 mm Hg, respiratory rate, 24 breaths/min, and oxygen (O2) saturation, 90% on room air. The physical examination is remarkable for severe respiratory distress, diffuse crackles, and a 2/6 systolic murmur in the left lower sternal border. Which of the following is the most appropriate intervention?</div>
+        <div class="options">
+            a. Give 2L of crystalloid over an hour.<br>
+            b. Start dobutamine.<br>
+            c. Initiation of dialysis for volume overload.<br>
+            d. Initiate continuous positive airway pressure (CPAP) therapy.
+        </div>
+        <div class="answer">Answer: d.</div>
+        <div class="answer-explanation">This patient presents with likely acute mitral regurgitation (MR) from a papillary muscle rupture after a myocardial infarction (MI). Giving additional fluid will likely make his pulmonary edema worse. Starting dobutamine without a vasopressor while he is hypotensive could make the hypotension worse. When the diagnosis of acute MR is suspected, initial stabilization in the ED includes treatment of pulmonary edema with intravenous nitrates, diuretics, and noninvasive positive pressure ventilation.</div>
+    </div>
+    
+    <div class="question">
+        <div class="question-number"><span class="bold">5.</span> A 38-year-old man presents with progressive dyspnea over a day, starting 2 hours before arrival. Vital signs are temperature 38.9°C (102.0°F; oral), heart rate, 115 beats/min, blood pressure, 120/72 mm Hg, respiratory rate, 26 breaths/min, and oxygen (O2) saturation, 92% on room air. The physical examination is remarkable for diffuse crackles and a 2/6 systolic murmur in the left lower sternal border. His echocardiogram demonstrates a large mass on the mitral valve with severe mitral regurgitation (MR). In addition to managing his pulmonary edema, which of the following is the most appropriate intervention?</div>
+        <div class="options">
+            a. Administer beta-blockade to reduce the risk of embolization.<br>
+            b. Consult Cardiac Surgery.<br>
+            c. Start a heparin infusion.<br>
+            d. Start digoxin for heart rate control.
+        </div>
+        <div class="answer">Answer: b.</div>
+        <div class="answer-explanation">Patients with suspected infectious endocarditis (IE) and acute heart failure require immediate consultation by a cardiothoracic surgeon. In general, there has been a shift toward earlier surgical treatment in IE, with approximately one-half of patients with left-sided infection undergoing surgery during the index admission. If possible, patients with left-sided IE should be managed by a multidisciplinary team at a center capable of cardiothoracic surgery. There is no role for addition of beta-blockade in this patient in heart failure. Heparin and digoxin are not indicated for IE.</div>
+    </div>
+</div>
+
+</body>
+</html>
