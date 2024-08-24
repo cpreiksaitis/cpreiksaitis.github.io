@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Empyema: ED Presentation, Evaluation, and Management</title>
+<title>EVALER20</title>
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -11,7 +11,7 @@
     }
     .header {
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
     .header h1 {
         font-size: 24px;
@@ -30,14 +30,29 @@
     .section h2 {
         color: #0275d8;
         font-size: 20px;
+        margin-bottom: 5px;
+        margin-top: 5px;
     }
     .section h3 {
         color: #0275d8;
-        font-size: 16px;
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
     .section h4 {
+        color: #666;
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .section h5 {
         color: #333;
         font-size: 14px;
+        margin-top:5px;
+        font-weight: lighter;
+    }
+    .section p {
+        margin-top:5px;
     }
     .lighter {
         font-weight: lighter;
@@ -51,160 +66,254 @@
         color: #0275d8;
     }
     img {
-  max-width: 100%;
-  height: auto;
+        display: block;
+        margin: 20px auto;
+        max-width: 100%;
+        height: auto;
     }
+    .key-concepts-box {
+            width: 80%;
+            border: 2px solid #0275d8;
+            background-color: #d9e2eb;
+            padding: 20px;
+            margin: 20px auto;
+        }
+        .key-concepts-title {
+            background-color: #0275d8;
+            color: white;
+            padding: 10px;
+            margin: -20px -20px 10px -20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .key-concepts-list {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .key-concepts-list li {
+            margin-bottom: 10px;
+        }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+    caption {
+        caption-side: top;
+        text-align: left;
+        font-weight: bold;
+        padding: 10px 0;
+    }
+    .small {
+        font-size: 70%;
+    }
+    .bold {
+        font-weight: bold;
+    }
+    .question {
+            margin-bottom: 15px;
+        }
+    .question-number {
+            margin-bottom: 5px;
+        }
+    .options{
+            margin-left: 20px;
+            margin-bottom: 30px;
+        }
+    .answer {
+            font-weight: bold;
+            margin-left: 20px;
+        }
+    .answer-explanation {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        .box {
+            width: 80%;
+            border: 2px solid #0275d8;
+            background-color: #d9e2eb;
+            font-size: 14px;
+            padding: 10px;
+            margin: 10px auto;
+        }
+        .box-title {
+            background-color: #0275d8;
+            color: white;
+            padding: 10px;
+            margin: -10px -10px 10px -10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .box-list {
+            list-style-type: disc;
+            padding: 10px;
+        }
+        .box li {
+            margin-bottom: 10px;
+        }
 </style>
 </head>
 <body>
 <div class="header">
-    <h1>Maxillofacial Trauma</h1>
-    <p class="author">Authors: Forrest Turner, MD (PGY-3, Emergency Medicine, Carolinas Medical Center); Bryant Allen, MD (@bryantkallen, Attending Physician, Emergency Medicine, Carolinas Medical Center)
-        <br><br> Reviewed by: Marina Boushra, MD; Alex Koyfman, MD (@EMHighAK); Brit Long, MD (@long_brit) </p>
+    <h1>Bomb and Blast Injuries</h1>
+    <p class="author">Authors: Michael J. Bono; Pinchas Halpern</p>
+</div>
+
+<div class="section">
+    <h3>Epidemiology</h3>
+    <p>Blast injuries using conventional weapons have emerged as the terrorist weapon of choice. In 2016, the National Counterterrorism Center reported 11,072 terrorist attacks worldwide, with 33,800 people injured and more than 25,600 deaths.<sup>1</sup> Total terrorist attacks decreased by 9% and total deaths decreased by 13% compared to 2015. As a comparison, in 2007, there were 14,000 terrorist attacks, with 44,000 injuries and 22,000 deaths, which was a 20% to 30% increase over 2006.<sup>1</sup> Explosive devices in military conflicts killed or injured more than 25,000 U.S. and Coalition forces and more than 100,000 Iraqis.<sup>2</sup> Blast injuries are increasing in the civilian setting, particularly suicide bombings, and emergency personnel must be familiar with the management and treatment of blast injuries and potential mass casualty incidents.<sup>3-10</sup> The United States is not immune from intentional bombings, with about 36,000 bombing incidents reported from 1983 to 2002 including explosive, incendiary, premature, and attempted bombings.<sup>7</sup> There were 281 people injured in the 2013 Boston Marathon bombing, with most injuries involving the lower extremities and soft tissue.<sup>9</sup> Blast injury is not a modern phenomenon, and there are reports of flammable gases causing blast injuries from volcanic eruptions and mining accidents dating back to 1316.<sup>11</sup> Death, survival, and hospitalization rates vary greatly, depending on the type of explosive, distance from the explosion, and whether the explosion occurred in an open or closed space. Although some victims die immediately at the scene, the majority of injuries suffered by the immediate survivors of bombings are potentially survivable. Blast injuries commonly occur not as isolated incidents, but as part of multiple-casualty incidents of varying sizes. This pattern, combined with the fact that most emergency physicians have never encountered a blast injury victim or a true mass casualty incident, makes the care of often eminently salvageable victims contingent upon appropriate training and skill retention by the individual emergency physician, along with appropriate institutional leadership, planning, and preparation.</p>
+    <p>Terrorist bombings result in high injury scores for victims as well as higher hospital resource use by victims than by victims of other trauma. Blast victims have increased immediate scene mortality, greater hospital mortality, more frequent need for surgical intervention, longer hospital stays, and greater use of critical care.</p>
+    <h3>Pathophysiology</h3>
+    <p>An explosion is the instantaneous transformation of a solid or liquid into a gas, releasing tremendous kinetic and heat energy. Detonation of a conventional high explosive generates a blast wave that spreads out from the detonation point and displaces air, water, or anything in its path. The blast wave consists of two parts: a shock wave of high pressure followed closely by a blast wind, which is air mass in motion. The blast wave loses its energy over distance and time.</p>
+    <p>There are four main types of blast effects. A primary injury is caused by a direct effect of blast wave overpressure on tissue. Primary blast injury mostly (but not exclusively) affects air-filled structures such as the lungs, ears, and GI tract, by the following mechanisms: spalling, shearing, and implosion. <b>Spalling</b> is displacement and fragmentation of a dense medium into a less dense medium.<sup>12</sup> An example of spalling is a blast wave causing the lung parenchyma to explode into the alveolar space like a geyser. <b>Shearing</b>, sometimes called inertia, is a stress caused by the blast wave traveling through different tissue densities at different velocities. An example of shearing is the blast wave traveling through the pulmonary vessels and air spaces, resulting in ruptured vascular and bronchial pedicles. <b>Implosion</b> is the opposite of spalling, where the less dense material is displaced into denser material. An example of implosion is the blast wave causing the flexible air spaces to rebound to greater than original size, sometimes causing air embolism from the alveoli into the pulmonary vessels.<sup>12</sup> A secondary blast injury is due to collateral damage from flying objects and shrapnel (Figures 1 and 2). Tertiary blast injury results from the victim being propelled through the air and striking stationary objects. A quaternary blast injury is a result of burns, smoke inhalation, or chemical agent release.</p>
+    <h5><b>Figure 1</b><br>Secondary blast injury to the chest and abdomen due to flying debris. It is difficult to assess the degree of underlying internal organ injury without imaging and careful clinical follow-up, especially if the patient is unconscious. [Image used with permission of Tel Aviv Medical Center.]</h5>
+    <img src="images/tin9_ch7_f001_1619091775.24938.png" width="465px" height="342px">
+    <h5><b>Figure 2</b><br>This young patient came in fully conscious and hemodynamically stable. Multiple externally visible shrapnel wounds required imaging. This radiograph image shows severe lung injury due to shrapnel. She also suffered multiple abdominal injuries, including major liver lacerations and bowel perforations, and required extensive surgery. [Image used with permission of Tel Aviv Medical Center.]</h5>
+    <img src="images/m_tin9_ch7_f002_1619091775.29665.png" width="465px" height="428px">
+    <h3>Factors Affecting Blast Injury</h3>
+    <p>The effects of a bomb blast are difficult to predict in the individual victim, as well as in the group. However, a number of important principles are known:</p>
+    <p><b>Distance of victim from explosion: </b>The intensity of an explosion pressure wave declines with the cubed root of the distance from the explosion. A person 3 m (10 ft) from an explosion experiences eight times more overpressure than a person 6 m (20 ft) away. Proximity of the victim to the explosion is an important factor in a primary blast injury.</p>
+    <p><b>Enclosed versus open space: </b>The effects of an explosion in a closed space, such as a room, bus, or train, are much greater than in an open space. Injuries are more severe, and mortality is greater.</p>
+    <p><b>Surrounding environment: </b>Blast waves are reflected by solid surfaces; thus, a person standing next to a wall may suffer increased primary blast injury.</p>
+    <p><b>Quantity of explosive: </b>A greater quantity of explosive produces greater potential for damage at any distance.</p>
+    <p><b>Type of explosive: </b>Explosives are commonly classified as either low-order or high-order. Low-order explosives burn rapidly and produce a blast wave of less than 1000 m/s.<sup>13</sup> Black powder is an example of a low-order explosive. High-order explosives detonate when a shock wave passes through them, causing an almost instantaneous transformation of the original explosive material into gases occupying the same volume of space under extremely high pressure. These high-pressure gases expand rapidly, compress the surrounding medium, and produce a supersonic, overpressure blast wave, moving at greater than 4500 m/s, followed closely by a negative pressure wave.</p>
+    <p><b>Embedded shrapnel: </b>Many terrorists purposefully embed multiple pieces of metal and plastic in the explosive, maximizing the number and severity of secondary injuries.</p>
 </div>
 <div class="section">
-    <h2>Case</h2>
-    <p>A 42-year-old male presents following a front-end high-speed motor vehicle collision. He was traveling approximately 50 mph when he lost control of the vehicle. He was unrestrained and there was ejection into a guardrail. On the scene, he was placed in a cervical collar and transported by EMS. On arrival, he has obvious facial injury, with active bleeding from the midface/nares and oral gurgling blood. Breath sounds are rhonchus but symmetric and there is no other obvious external bleeding or evidence of trauma. Prehospital vital signs are maximal heart rate 119 beats per minute, lowest blood pressure 135/80 mmHg, respiratory rate 26 breaths per minute, SpO2 94% on 15L non-rebreather, GCS is 9 (E1V2M6) as he follows commands but is intermittently combative.</p>
+    <h3>Clinical Features</h3>
+    <p>The nature of the injury may produce a multiplicity of external signs (Figure 3), making detection of important internal injuries challenging. Insufficient or suboptimal resources need to be prioritized in a mass casualty incident. High-grade clinical expertise is even more in demand to allow optimal use of resources.<sup>3-10</sup></p>
+    <h5><b>Figure 3</b><br>The severe external injuries often seen with explosive blast may or may not indicate associated severe internal injury. Clinical examination is difficult and requires a high degree of experience and suspicion as well as early use of imaging. [Image used with permission of Tel Aviv Medical Center.]</h5>
+    <img src="images/m_tin9_ch7_f003_1619091775.33771.png" width="520px" height="343px">
+    <h4>Cardiopulmonary System</h4>
+    <p>The lung is very susceptible to primary blast injury. <b>Pulmonary barotrauma is the most common fatal primary blast injury</b> and the most common critical injury in people close to the blast center. Pressure differentials across the alveolar–capillary interface can cause disruption, hemorrhage, pulmonary contusion, pneumothorax, hemothorax, pneumomediastinum, and subcutaneous emphysema. Air embolism is another well-recognized consequence of blast lung injury and is probably one of the major factors leading to cardiac dysfunction and immediate death after blast wave exposure, although it is usually difficult to diagnose specifically. The resulting neurologic symptoms caused by air embolism must be differentiated from the direct effects of CNS trauma. Pulmonary fat embolism is a finding of clinical importance in survivors of blast trauma because it can lead to the development of acute respiratory distress syndrome and significantly affects clinical outcomes.</p>
+    <p>In general, managing blast lung injury is similar to caring for pulmonary contusion and acute respiratory distress syndrome, except that early recognition of the syndrome may be complicated by initially benign symptoms, especially in the context of hectic mass casualty incident situations. Hypoxia is an almost universal finding.<sup>14</sup> Monitoring of respiratory rate and room-air pulse oximetry, as well as serial chest radiographs, may be needed. Fluid administration should ensure tissue perfusion without volume overload. The decision to institute mechanical ventilation must be made carefully because it entails the assignment of what may be scarce critical care unit beds and ventilators and also exposes the patient to the potential complications of pulmonary barotrauma, commonly seen with the friable lungs associated with blast lung syndrome. <b>Keep tidal volume to 6 to 7 mL/kg ideal body weight to limit the peak inspiratory pressure and to minimize ventilator-induced lung barotrauma.</b> Often, neuromuscular paralysis and early institution of pressure-limited ventilation (plateau pressures &lt;30 cm H2O),15 with the lowest pressures compatible with adequate ventilation, may be the best strategy. Inverse inspiratory-to-expiratory ratio ventilation may be useful. Permissive hypercapnia is acceptable depending on cerebral perfusion pressure or increased intracranial pressure.<sup>15</sup> Aggressive methods of oxygenation, such as extracorporeal membrane oxygenation or intravascular oxygenation, may become necessary within hours of the injury.</p>
+    <p>There are no definitive guidelines for observation, admission, or discharge of patients with possible blast lung injury. Admit patients requiring complex management to an intensive care unit. In general, asymptomatic patients with normal chest radiographs and normal room-air pulse oximetry may be considered for discharge after 4 to 6 hours of observation as long as there is no clinical deterioration. Survivors of this type of injury typically have no long-term pulmonary complaints, and most have normal physical examinations, chest radiographs, and normal lung function tests.</p>
+    <h4>Ears</h4>
+    <p>The tympanic membrane ruptures at 1 to 8 psi of dynamic overpressure. Dislodgement of ossicles may also occur. Patients with an isolated tympanic membrane perforation and no other immediately identified injuries should have a chest radiograph ordered but do not automatically require an extended period of observation. Conversely, intact tympanic membranes do not imply the absence of serious injury, and the use of the perforation of tympanic membrane as an indicator of primary blast injury missed up to 50% of those suffering a primary blast injury to the lung.<sup>16</sup> Clinical judgment is necessary, and limited observation is reasonable for patients with intact tympanic membranes. Experience from the Boston Marathon bombings suggests that blast-related otologic injuries were a major source of continued morbidity and required extended follow-up.<sup>17</sup></p>
+    <h4>Abdomen</h4>
+    <p>Abdominal injuries from explosions may be occult. Reported injury rates are low, but missed injuries may carry significant morbidity due to delayed intestinal perforation and necrosis. A review of the literature on abdominal trauma from primary blast injury reveals an incidence of 1.3% to 33%, and the terminal ileum and cecum were the most commonly injured areas.<sup>18</sup> Serial clinical examinations, serial imaging as needed, and 24- to 48-hour observation are indicated whenever the suspicion arises. <b>Air is a poor conductor of blast-wave energy; thus, patients who were subjected to enough energy to damage abdominal organs probably were situated near the explosive device</b>. There have been case reports of pneumoperitoneum without visceral trauma, so if the patient is suspected to have been near the explosive device, CT scan of the abdomen and pelvis might be considered.<sup>19</sup></p>
+    <h4>Brain Injury</h4>
+    <p>The conflicts of the Global War on Terror in Iraq and Afghanistan have resulted in over a quarter of a million diagnosed cases of traumatic brain injury.<sup>20</sup> Mild traumatic brain injury has been labeled the “signature injury of the war in Iraq.”<sup>2,21-26</sup> Penetrating shrapnel is the most common cause of brain injury, but there may be a component of blast overpressure–induced compromise of the blood–brain barrier and cerebral blood vessels.<sup>27</sup> The clinical examination may be misleading for penetrating injuries. Shrapnel are low-velocity missiles, often producing small entry wounds in survivors. Small entry wounds may be missed under the hair, and evidence for traumatic brain injury may initially be benign or masked by anesthesia as the patient undergoes treatment for other life-threatening injuries. Neuroimaging is an important early diagnostic tool (Figure 4).</p>
+    <h5><b>Figure 5</b><br><b>A.</b> CT scan image of a 17-year-old female patient injured in a terrorist bomb blast in Israel. This girl walked into the ED unassisted, was triaged “green,” but deteriorated after 30 minutes. Fortunately the clinical deterioration was noted, she underwent emergent CT, and then extensive neurosurgical intervention.<br> <b>B.</b> A 1-cm metal ball bearing was extracted. Prolonged rehabilitation was later required for residual brain damage. [Image used with permission of Tel Aviv Medical Center.]</h5>
+    <img src="images/m_tin9_ch7_f004a_1619091775.39507.png" width="520px" height="563px">
+    <img src="images/m_tin9_ch7_f004b_1619091775.39507.png" width="438px" heignt="424px">
+    <h4>Vascular Injury</h4>
+    <p>Small entry wounds from shrapnel may mask severe vascular injuries. Compartment syndrome may develop and is difficult to diagnose, especially in patients receiving anesthesia. Carefully assess and document pulses and perfusion in affected limbs. <b>Observe for delayed presentation of compartment syndrome, and measure compartment pressure if any signs or symptoms develop.</b> Early angiography and intervention are indicated if pulses are lost.</p>
+    <h4>External Hemorrhage</h4>
+    <p>Exsanguination from wounds is likely to be the most commonly encountered life-threatening finding. Military experience has shown that hemorrhage is the most common cause of preventable death in penetrating trauma.<sup>10</sup> Whether venous or arterial, blood loss from multiple wounds (internal and external) may cause hypovolemic shock. Quickly control external bleeding with direct pressure. Apply tourniquets for extremity hemorrhage whenever blood loss cannot be controlled with direct pressure or if the resources required to maintain direct pressure are insufficient during treatment or transportation. Tourniquets have been successfully used for up to 6 hours in battlefield situations.<sup>28</sup> Angiographic vascular occlusion is an attractive treatment option if the time and staff are available. Victims of blast mass casualty incidents may require massive amounts of blood and blood products.<sup>29</sup></p>
+    <h4>Ocular Injuries</h4>
+    <p>Eye injuries from a blast wave may cause shearing damage to the orbit, but ocular injuries are from a combination of primary and secondary processes.<sup>30</sup> Ocular injuries include lid or brow lacerations, conjunctival lacerations, open globe injuries, orbital fractures, retinal detachment, retained intraocular foreign body, lens dislocation, vitreous hemorrhage, retinal tears, and retinal detachment.<sup>30</sup> Eye examination is needed for all moderately to severely injured blast victims, and a poor initial visual acuity is not a guarantee of a poor final result.</p>
+    <p>Screen any patient presenting with back pain, fever, or neurologic complaint for spinal epidural abscess. Patients may have a history of chronic back pain or may offer a mechanism of mild trauma, which can distract from a diagnosis of spinal epidural abscess. Similarly, neck pain or stiffness is often thought to be meningitis or encephalitis, causing cervical spinal epidural abscess to be overlooked.</p>
 </div>
 <div class="section">
-    <h2>Introduction</h2>
-    <p>Traumatic injuries to the face present a broad set of challenges to emergency physicians. The burden of disease can range from minor facial lacerations to life-threatening airway compromise. While injuries to the head, face, neck account for nearly 5% of emergency department visits, the majority are not severe and are discharged home.<sup>1</sup> Of the more severe cases, as many as 42% will require intubation, requiring cautious and expeditious airway management.<sup>1</sup> In these severe cases, case series have shown an associated incidence of 44% for intracerebral hemorrhage, 6% for vision loss, and a 9% mortality rate.<sup>2,3</sup> This, when considered alongside the importance of the face in appearance, speech, vision, mastication, and sensation, suggests a significant risk of morbidity with these important aspects of the primary survey in patients with maxillofacial trauma as well as the evaluation and management of frontal, orbital, nasal, midface, and mandibular injuries.</p>
+    <h3>Diagnosis</h3>
+    <p>In the ED, order diagnostic imaging judiciously in a mass casualty incident. Priorities for care are airway management, treatment of tension pneumothorax, and fluid and blood resuscitation. Visualization of a metallic object on a single-plane radiograph is often inadequate for thorough evaluation, but it can direct the treatment team on the need for urgent surgery or for additional imaging. Plain chest radiographs or ultrasonography and the FAST examination are the most rapid studies used to evaluate for life-threatening injuries. Order laboratory tests sparingly.</p>
+</div>
 </div>
 <div class="section">
-    <h2>Airway and Breathing <span class="lighter">- Examination and Preparation</span></h2>
-    <p>The primary survey provides a framework to quickly assess and intervene on immediate life threats. In the case of significant
-        facial trauma, this usually directs attention to securing the airway if necessary.</p>
-    <p>Careful examination of the airway can provide valuable information as to what challenges may be faced. Significant hemorrhage, whether venous or arterial, can result from facial fractures. Large bore suction (preferably two sources) is invaluable. Avulsed dental fractures, dentures, vomitus, and fragments of soft tissue or bone are just some of the potential surprises that can obstruct intubation attempts; a ringed forceps or similar instrument may be a useful adjunct. If digital manipulation of the oropharynx is necessary, the finger should be swept laterally just inside the cheek and hooked medially and out; a centrally-inserted finger runs the risk of pushing foreign bodies further into the airway. Facial fractures are prone to swelling and edema of the upper airway, so physicians must be especially vigilant in cases with a delayed presentation or who are being observed. Mandibular fractures can compromise the anterior insertion of the tongue, displacing it posteriorly if the patient is supine. Dry gauze, a towel clip, or #0 suture (placed transversely through the dorsum of the tongue) can help control these structures. Additionally, raising the head of bed, spinal precautions permitting, is helpful in preventing blood, foreign objects, and traumatized structures from falling into the airway and reducing the risk of aspiration.<sup>4,5</sup></p>
-    <p>Nasal pharyngeal airway (NPA) devices can be helpful when bag-valve-mask (BVM) ventilation is difficult. However, NPA is contraindicated in cases of facial trauma and basilar skull fracture, based on two case reports documenting malposition of nasal airways into the central nervous system (CNS).6,7 Further, nasal hemorrhage and fracture can make the placement of an NPA more difficult. Maxillary fractures can also displace the midface posteroinferiorly, completely occluding the nasal airway.<sup>5</sup></p>
-    <p>Video laryngoscopy has shown superiority when compared to direct laryngoscopy in multiple studies, especially in cases where cervical motion is to be minimized.<sup>8,9</sup> Multiple adjuncts and backup devices such as supraglottic devices and gum elastic bougies can contribute to success. Aggressive preoxygenation and the use of apneic oxygenation (using some combination of nasal cannula, non-rebreather mask, and BVM) can increase the time to desaturation. In cases where assisted BVM ventilation is necessary, the two-person technique is often required to obtain a good seal in cases where the normal contour of the face is distorted. Preparation should be made in advance to anticipate a “cannot intubate, cannot ventilate” scenario, in which case surgical cricothyrotomy is indicated. In preparation, physicians should examine the neck and have equipment for a surgical airway ready at the bedside (double setup). While rapid sequence intubation (RSI) is usually the preferred method of airway management, if time permits, patients with facial trauma and anticipated difficult airways are excellent candidates for awake intubation using either ketamine or etomidate, in addition to topicalization with anesthetic.<sup>4,9</sup></p>
+    <h3>Treatment</h3>
+    <p>When blast injuries occur, they tend to be unexpected, occur outside of regular working hours, and often produce moderate to large numbers of simultaneously arriving casualties. Drills and checklists are critical for successful implementation of rarely used protocols. Checklists should be concise, never more than one to two pages, and available in a location known to everyone. Implement the hospital plan for management of mass casualty incidents.</p>
+    <p>Obtain details about the explosion from patients and rescue teams. <b>The nature and location of the blast, including size and type of charge, location in open or closed space, structural collapse, associated fire or smoke, and toxic agent release, will be helpful in making informed clinical decisions, especially with regard to disposition of moderately to severely injured casualties.</b></p>
+    <p>Initiate triage as multiple patients arrive. Station an experienced emergency physician or surgeon at the ED entrance to triage patients to appropriate, predetermined locations in the ED or elsewhere in the hospital. Triage to categories of urgency using criteria such as those listed in Table 1. Many triage methods have been in use in various parts of the world, with varying success and scientific foundation.<sup>3-8</sup></p>
+    <table>
+        <caption>Table 1: Criteria for Triage in Bomb Injuries</caption>
+        <thead>
+            <tr>
+                <th>Severely Injured</th>
+                <th>Lightly Injured</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Airway compromise</td>
+                <td>Minor wounds</td>
+            </tr>
+            <tr>
+                <td>Breathing difficulty</td>
+                <td>Burns, first or second degree</td>
+            </tr>
+            <tr>
+                <td>Hemodynamic instability</td>
+                <td>Isolated trauma to a limb</td>
+            </tr>
+            <tr>
+                <td>Altered level of consciousness</td>
+                <td>Anxiety states</td>
+            </tr>
+            <tr>
+                <td>Vascular trauma</td>
+                <td>Most walking patients</td>
+            </tr>
+            <tr>
+                <td>Extensive second- to third-degree burns</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Apply the basic advanced trauma life support principles of primary and secondary surveys within the logistic limitations that may occur temporarily or permanently. Administer IV fluids and blood products judiciously. Preventing fluid overload is important for lung- and brain-injured patients. Consider tranexamic acid for uncontrollable bleeding.</p>
+    <p><b>Copiously irrigate and disinfect wounds urgently, but definitive debridement and closure may wait a few hours.</b> Temporary splinting, traction, and dressings are generally sufficient for initial management of musculoskeletal injuries. Consider prophylactic antibiotics for severely soiled wounds, penetrating abdominal and thoracic wounds, and open fractures, and in patients with diabetes or who are immunocompromised.</p>
+    <p>Address pain management after life-threatening emergencies have been evaluated. Reserve opiates for patients with severe pain because opiate supplies may become limited.</p>
+    <p>Patients exposed to open-space explosions and who have no apparent significant injury, normal vital signs, and an unremarkable physical examination generally can be discharged after 4 to 6 hours of observation. Perform secondary assessments of all casualties before discharge. Admit all patients with significant burns, suspected air embolism, radiation or chemical contamination, abnormal vital signs, abnormal lung examination findings, clinical or radiographic evidence of pulmonary contusion or pneumothorax, abdominal pain, vomiting, hypoxia, or penetrating injuries to the thorax, abdomen, neck, or head to the hospital.</p>
+    <p>Patients appropriate for discharge need proper follow-up instructions, due to the austerity of initial care and the propensity to miss injuries in a mass casualty incident. Because symptoms of pulmonary contusion and intestinal hematoma may take 12 to 48 hours to develop, instruct all discharged patients to return for reevaluation if they develop breathing problems, abdominal pain, or vomiting. Provide relevant follow-up instructions in writing, including audiologic and ear, nose, and throat follow-up, wound care, immunization schedules, medications, psychological support, and social services.</p>
 </div>
 <div class="section">
-    <h2>Circulation <span class="lighter">- Hard to Reach Bleeds</span></h2>
-    <p>The importance of achieving hemostasis in cases of maxillofacial trauma is two-fold: to reduce airway obstruction as discussed above and to reduce hemorrhagic volume loss. While life-threatening hemorrhage from facial fractures is uncommon, it may be present in as many as 10% of cases of severe facial injury. Primary sources of hemorrhage include branches of the internal carotid such as the ophthalmic and ethmoid arteries, as well as branches of the external carotid such as the maxillary artery. In cases of external or intraoral hemorrhage, direct pressure, packing, and suture are usually sufficient. In cases of epistaxis, routine techniques for anterior epistaxis can be used: direct pressure, various tamponade devices, tampon/other packing, topical tranexamic acid (TXA). If posterior packing is required, the use of a posterior tamponade device (i.e. Rhino Rocket) or Foley catheter bulb technique in combination with anterior nasal and intraoral packing is recommended. Use caution with posterior packing for reasons mentioned above regarding NPA insertion, as basilar skull fracture can result in malposition intracranially. Inserting a Foley catheter or other posterior packing device until directly visualized in the oropharynx and then applying traction can assist with appropriate placement. When bleeding persists beyond these techniques, it is important to seek specialist consultation with interventional radiology, ENT, or surgery to perform arterial embolization, fracture reduction, or external carotid artery ligation, respectively.<sup>4,10</sup></p>
+    <h3>Special Considerations</h3>
+    <h4>Pregnant Women and Children</h4>
+    <p>Because the fetus is surrounded by amniotic fluid, direct injury to the fetus is uncommon. <b>Injuries to the placenta, however, are more common</b>. After life-threatening conditions have been stabilized, admit patients in the second or third trimester of pregnancy who have been exposed to blast injury to the labor and delivery area for continuous fetal monitoring and further testing and evaluation. Pelvic US, fetal nonstress test monitoring, and obstetrics consultation should always be obtained. Consider Rh immune globulin administration if the mother’s blood type is Rh negative.</p>
+    <p>Children may suffer significant tertiary blast injury because their lighter bodies are more easily hurled by the blast wind. Imaging, such as total-body CT, may be difficult to perform in anxious and frightened children, and typically requires sedation.</p>
+    <h4>Staff Safety</h4>
+    <p>Issues that may affect staff safety include: (1) possible infiltration of the ED by perpetrators intent on causing second explosions or attacks in the hospital; (2) unexploded explosives inadvertently brought into the ED; (3) transmissible disease in the setting of body fluid exposure or needle sticks during stressful, rapid work; and (4) contamination of victims by chemical, radiologic, and biologic hazards, either accidental or intentionally caused by the perpetrators. Preplan for such situations.</p>
+    <h4>Forensic Issues</h4>
+    <p>Police and crime scene investigators, as well as counterterrorism and other security services, have legitimate interests in securing forensic and other information. Efforts should be made to accommodate them, but never at the expense of medical care. Prior coordination with all relevant authorities should establish protocols, such as who and how many persons from these agencies are allowed in, when, into which parts of the ED, who controls them, and who is empowered to limit their entry and work. As a rule, however, although a terrorist event is a crime, forensics in the hospital are of minor relevance compared with the actual crime scene. Investigators may wish to interrogate victims with minor injuries regarding the event and obtain shrapnel or clothing from patients for forensic analysis.</p>
+    <h4>Information Management</h4>
+    <p>Because blast injury is often part of a large event, information becomes a critical component of appropriate management. Such information concerns include: (1) clinical charting and other patient care–centered information, such as imaging; (2) command and control information, such as casualty flow data, resource management data, and interface with other agencies; (3) information provided to relatives; (4) information provided to the media; and (5) information recorded for quality improvement and research. An information center is an indispensable component of such events, providing relief for the relatives and also preventing them from crowding patient care spaces and impeding caregiver workflow.</p>
 </div>
+
 <div class="section">
-    <h2>Secondary Survey</h2>
-    <p>Once immediate life threats have been addressed, a thorough top-to-bottom evaluation of the extent of facial injuries is required followed by deciding to proceed with imaging. In general, CT of the face is the gold standard for imaging of facial fractures, with axial, coronal, and sagittal as well as 3-D reconstructions maximizing sensitivities for most types of fracture to greater than 90%.<sup>4,11,12</sup> When suspicion is low, a CT of the head provides a look at the facial structures but is only 80% sensitive for facial fracture.<sup>13</sup> In settings where access to CT is limited, a single Waters view is a valid screening tool, although one study demonstrated plain radiography missing as many as 38% of fractures.<sup>14</sup> While data discussing injuries missed on initial facial CT is limited, clinical acumen and physical examination should not be neglected. For example, isolated pterygoid fractures were associated with occult mandible fractures in all seven patients in one case series.<sup>15</sup></p>
+    <h2>REFERENCES</h2>
+<ol>
+    <li>National Consortium for the Study of Terrorism and Responses to Terrorism: Annex of Statistical Information Country Reports on Terrorism 2016. July 2017. <a class="link" href="https://www.state.gov/documents/organization/272485.pdf">https://www.state.gov/documents/organization/272485.pdf</a> Accessed April 13, 2018.</li>
+    <li>Champion HR, Holcomb JB, Young LA: Injuries from explosions: physics, biophysics, pathology, and required research focus. J Trauma 66: 1468, 2009.</li>
+    <li>No authors listed: SALT mass casualty triage. Disaster Med Public Health Prep 2: 245, 2008.</li>
+    <li>Holt GR: Making difficult ethical decisions in patient care during natural disasters and other mass casualty events. Otolaryngol Head Neck Surg 139: 181, 2008.</li>
+    <li>Kashuk JL, Halperin P, Caspi G, Colwell, Moore EE: Bomb explosions in acts of terrorism: evil creativity challenges our trauma systems. J Am Coll Surg 209: 134, 2009.</li>
+    <li>Kilner TM, Brace SJ, Cooke MW, Stallard N, Bleetman A, Perkins GD: In “big bang” major incidents do triage tools accurately predict clinical priority? A systematic review of the literature. Injury 98: 460, 2011.</li>
+    <li>Kapur GB, Hutson HR, Davis MA, Rice PL: The United States twenty-year experience with bombing incidents: implications for terrorism preparedness and medical response. J Trauma 59: 1436, 2005.</li>
+    <li>Wolfson N: Orthopedic triage during natural disasters and mass causalities: do scoring systems matter? Int Orthop 37: 1439, 2013.</li>
+    <li>Gates J, Arabian S, Biddinger P, et al: The initial response to the Boston Marathon bombing: lessons learned to prepare for the next disaster. Ann Surg 260: 960, 2014.</li>
+    <li>Jacobs LM, McSwain NE, Rotondo MF, et al: The Hartford consensus: THREAT, a medical disaster preparedness concept. J Am Coll Surg 217: 947, 2013.</li>
+    <li>Bowen L, Moore D, Okun M: Is blast injury a modern phenomenon? Early descriptions of mining and volcanic traumatic brain injury with relevance to modern terrorist attacks and military warfare. Neurologist 21: 19, 2016.</li>
+    <li>Yeh DD, Schecter WP: Primary blast injuries—an updated concise review. World J Surg 369: 966, 2012.</li>
+    <li>Wolf SJ, Bebarta VS, Bonnett CJ, Pons PT, Cantrill SV: Blast injuries. Lancet 374: 405, 2009.</li>
+    <li>Smith JE: Blast lung injury. J R Nav Med Serv 97: 99, 2011.</li>
+    <li>Mackenzie IM, Tunnicliffe B: Blast injuries to the lung: epidemiology and management. Philos Trans R Soc Lond B Biol Sci 366: 295, 2011.</li>
+    <li>Peters P: Primary blast injury: an intact tympanic membrane does not indicate the lack of a pulmonary blast injury. Mil Med 176: 110, 2011.</li>
+    <li>Remenschneider A, Lookabaugh S, Aliphas A, et al: Otologic outcomes after blast injury: the Boston Marathon experience. Otol Neurotol 35: 1825, 2014.</li>
+    <li>Owers C, Morgan JL, Garner JP: Abdominal trauma in primary blast injury. Br J Surg 98: 168, 2011.</li>
+    <li>Bowley D, Gillingham S, Mercer S, Schrager J, West A: Pneumoperitoneum without visceral trauma: an under-recognized phenomenon after blast injury? J R Army Med Corps 159: 312, 2013.</li>
+    <li>Magnuson J, Leonessa F, Ling GS: Neuropathology of explosive blast traumatic brain injury. Curr Neurol Neurosci Rep 12: 570, 2012.</li>
+    <li>Hoge CW, McGurk D, Thomas JL, Cox AL, Engel CC, Castro CA: Mild traumatic brain injury in U.S. soldiers returning from Iraq. N Engl J Med 358: 453, 2008.</li>
+    <li>Bass CR, Panzer MB, Rafaels KA, Wood G, Shridharani J, Capehart B: Brain injuries from blast. Ann Biomed Eng 40: 185, 2012.</li>
+    <li>Rosenfeld JV, McFarlane AC, Bragge P, Armonda RA, Grimes JB, Ling GS: Blast-related traumatic brain injury. Lancet Neurol 12: 882, 2013.</li>
+    <li>Courtney MW, Courtney AC: Working toward exposure thresholds for blast-induced traumatic brain injury: thoracic and acceleration mechanisms. Neuroimage 54 (Suppl 1): S55, 2011.</li>
+    <li>Chen Y, Huang W: Non-impact, blast-induced mild TBI and PTSD: concepts and caveats. Brain Inj 25: 641, 2011.</li>
+    <li>Schultz BA, Cifu DX, McNamee S, Nichols M, Carne W: Assessment and treatment of common persistent sequelae following blast induced mild traumatic brain injury. NeuroRehabilitation 28: 309, 2011.</li>
+    <li>Yeoh S, Bell E, Moson K: Distribution of blood-brain barrier disruption in primary blast injury. Ann Biomed Eng 41: 2206, 2013.</li>
+    <li>Kragh JF Jr, Beebe DF, O’Neill ML, et al: Performance improvement in emergency tourniquet use during the Baghdad surge. Am J Emerg Med 31: 873, 2013.</li>
+    <li>Glasgow SM, Allard S, Doughty H, Spreadborough P, Watkins E: Blood and bombs: the demand and use of blood following the London bombings of 7 July 2005—a retrospective review. Transfus Med 22: 244, 2012.</li>
+    <li>Scott R: The injured eye. Philos Trans R Soc Lond B Biol Sci 366: 251, 2011.</li>
+</ol>
 </div>
-<div class="section">
-    <h3>Frontal Bone Fracture</h3>
-    <p>Evaluation – Being the strongest of the facial bones, frontal bone fractures are associated with high energy mechanisms and concomitant injuries including intracranial injury, orbital injury, basilar skull fractures, and temporal bone injury. Physicians should evaluate for signs of cranial nerve injury such as paresthesia, hearing or vision loss/changes, as well as rhinorrhea or otorrhea which suggests cerebrospinal fluid (CSF) leak. Lacerations will usually overlie frontal sinus fractures; crepitus may also suggest sinus involvement. CT imaging should be obtained both to investigate for intracranial injury and evaluate the anterior and posterior tables of the frontal sinus.</p>
-    <p>Management – Isolated anterior table fracture can be managed as an outpatient by a facial surgeon (e.g. ENT, plastic surgery). All sinus fractures have historically been managed using antibiotic prophylaxis, with first-generation cephalosporins or amoxicillin-clavulanic acid being the most commonly used choices. Involvement of the posterior table, which forms part of the anterior cranial fossa and is attached to the dura, is associated with CSF leaks, pneumocephalus, and CNS infection, warranting neurosurgical consultation and repair.<sup>4,16,17</sup></p>
-</div>
-<div class="section">
-    <h3>Orbital Fracture</h3>
-    <p>Evaluation – Seven bones form the orbit, with the medial and inferior walls being the weakest (Figure 1). Orbital fractures are often associated with frontal, zygomatic, and maxillary fractures. The examination should include palpation of the entire orbital rim, evaluation for crepitus, and assessment for the presence of enophthalmos (eye sunken back), subtle ocular motility deficits, diplopia, blurry vision, numbness to the cheek, or eyelid swelling. During the examination, the patient should be instructed to fully open their eyes; if eye-opening is easy and symmetric (or smooth with little resistance against the examiner’s finger) this is reassuring against significantly elevated intraocular pressure.</p>
-    <h4>Figure 1: The bones forming the orbit</h4>
-    <img src="/images/Orbitalbones1-1.jpeg.webp" alt="Oribital Bones" width="636px" height="301px">
-    <p>Fracture of the orbital floor is the most common type of orbital injury. Inferior rectus entrapment with subsequent superior gaze deficit and infraorbital nerve paresthesia are common associated findings. Nausea, vomiting, and bradycardia, symptoms usually associated with increased intracranial pressure, are possible due to reflexes associated with the trigeminal nerve.<sup>18</sup> The second most common site of injury is the medial wall of the orbit, which is associated with orbital emphysema from ethmoid sinuses, telecanthus, tear outflow obstruction, and bleeding from the ethmoidal arteries brisk enough to cause a retrobulbar hematoma. When investigating the orbit for injury, as discussed above, facial CT with multiplanar reconstructions is highly sensitive.<sup>11,12</sup></p>
-    <p>When concerned for trauma around the eye, physicians should perform a thorough eye exam, especially before worsening swelling can make it more difficult later. As many as 15% of orbital fractures are associated with ophthalmologic emergencies with morbidity often superseding that seen with orbital fractures.<sup>4,19</sup> This discussion will not cover ocular injuries (see: <span class="link">Traumatic Occular Emergencies</span>) but corneal abrasions, globe ruptures, iritis, retinal/vitreous injuries, and optic nerve injury can be subtle and vision threatening.<sup>4,19</sup></p>
-    <p>Management – Orbital fractures usually warrant discussion with a facial surgeon. Most orbital blowouts can be followed up as an outpatient. Linear or trapdoor fractures can cause entrapment of extraocular muscle. While entrapment can resolve spontaneously, tissue ischemia is possible and demands urgent consultation.</p>
-    <p>Patients with orbital fractures should be prescribed oral decongestants and instructed to avoid nose blowing until seen for follow-up. Orbital emphysema can create a compartment syndrome similar to a retrobulbar hematoma, so patients should be counseled on return precautions including worsening orbital pain or diminished vision. Cold packs are a useful adjunct for analgesia and swelling. If the fracture extends into a sinus, prophylactic antibiotics may be given to prevent orbital cellulitis, although evidence for this practice remains weak. Amoxicillin-clavulanate is first-line.<sup>4,12</sup></p> 
-</div>
-<div class="section">
-    <h3>Nasal Fracture</h3>
-    <p>Evaluation – Nasal fractures account for the majority of facial fractures. External evaluation involves close inspection and palpation for deformity or crepitus. The examiner should rock the bridge of the nose to evaluate for midface for stability. Periorbital ecchymoses is often associated with nasal bone fracture. A driver’s license or cell phone picture can help provide a reference for the pre-injury shape of the patient’s nose. Epistaxis is common but vigilance for clear rhinorrhea suggesting CSF leak is of utmost importance. Internal exam requires close inspection for septal hematoma, but patient discomfort, blood clot, and dried blood can make for a suboptimal exam. Warm saline irrigation should be considered, with the addition of topical anesthetic vasoconstricting agents, i.e. phenylephrine, cocaine, oxymetazoline.<sup>20</sup></p>
-    <p>Plain films are usually unnecessary as most isolated nasal fractures can be diagnosed clinically. If there is concern for other facial fractures, CT is the diagnostic modality of choice. CT imaging for naso-orbitoethmoid (NOE) fractures should be considered if there is suspicion for high-energy mechanism.<sup>4</sup></p>
-    <p>Management – Fractures with associated lacerations, whether externally or internally, should be treated as an open fracture. Septal hematomas require incision and drainage to prevent saddle deformity or abscess formation. Following decompression, the nares should be packed with next-day ENT follow-up and a prescription for antibiotics (amoxicillin-clavulanate).<sup>4</sup></p>
-    <p>Ice and head elevation are simple measures to improve pain and swelling for nasal fractures. For simple, unilateral fractures that present to the ED within 4-6 hours, prior to edema setting in, it is reasonable to attempt closed reduction in the emergency department if the physician is comfortable doing so and the patient is appropriately counseled, consented, and anesthetized. Helpful graphics can be found in the literature.<sup>21</sup> Whether reduced or not, the patient should follow up with ENT in 3-10 days.<sup>4,22</sup></p>
-</div>
-<div class="section">
-    <h3>Midface Fracture</h3>
-    <p>Evaluation – On inspection, zygoma fractures can demonstrate flattening of the malar eminence. Trismus is an associated feature. Zygomaticomaxillary (also called tripod or quadripod) fractures involve the orbit and sinuses and are associated with ocular findings and crepitus.</p>
-    <p>Le Fort injuries of the maxilla are high-energy injuries, carrying an increased incidence of cervical, intracranial, and ocular injuries.<sup>23,24</sup> Associated findings include significant edema, bleeding, CSF leaks, and bilateral periorbital ecchymoses. Palpation of the midface and pulling on the hard palate will demonstrate instability. Fracture patterns are characterized by location transversely through the body of the maxilla (Le Fort I), pyramidally through the hard palate and above the nose (Le Fort II), through the entirety of the midface across the orbits (Le Fort III), or higher with frontal bone involvement (Le Fort IV) (Figure 2).<sup>23,24</sup></p>
-    <h4>Figure 2: Le Fort fracture patterns</h4>
-    <img src="/images/Le-Fort-Fractures.png.webp" alt="Le Fort Fractures" width="465" height="465">
-    <p>Management – Zygomatic arch fractures can usually follow up as an outpatient. Tripod injuries often require admission for IV antibiotics and operative repair.</p>
-    <p>Le Fort fractures will require control of bleeding and often the airway, use nasal and oral packing as described above. Nasopharyngeal airways and nasotracheal intubation are contraindicated. These patients are usually admitted for antibiotics and surgery.<sup>4</sup></p>
-    <p>Further discussion on Le Fort fractures including diagrams of injury patterns can be found here: <span class="link">Le Fort Fractures</span></p>
-</div>
-<div class="section">
-    <h3>Mandibular Fracture</h3>
-    <p>Evaluation – Mandibular fractures are the second most common facial bone fracture. The mandible forms a dynamic ring with the temporomandibular joints (TMJs) bilaterally. Fractures often occur in 2 or more locations, although as many as 63% are single fractures (Figure 3).<sup>25,26</sup> Patients should be asked about jaw malocclusion as well as paresthesia to the chin, lip, or teeth. When there is suspicion for a mandibular fracture, a thorough intraoral exam should be performed. Even small breaks in the mucosa should be considered an open fracture. The examination should include evaluation for sublingual hematomas, which may suggest occult fracture or may develop into an airway issue. The TMJs should be palpated and the examiner should inspect for hemotympanum or auditory canal trauma to suggest easy-to-miss condyle fractures.<sup>4,27</sup></p>
-    <h4>Figure 3: Frequency of mandibular fractures by anatomic location</h4>
-    <img src="/images/Mandbular_fractures.png.webp" alt="Mandibuar Fractures" width="619px" height="534px">
-    <p>The “tongue blade test” is 95% sensitive for fracture. If a patient can break a tongue depressor held between their teeth on both sides without too much discomfort, fracture is unlikely.<sup>28,29</sup></p>
-    <p>Panoramic mandibular radiography (Panorex), in addition to anteroposterior mandible films, is a reasonable test, especially when suspicion is low, although CT is gold standard with sensitivity approaching 100%.<sup>4,30,31,32</sup></p>
-    <p>Management – Physicians should be wary of injuries that may result in airway compromise.  If there is no evidence of impending airway compromies, a Barton’s bandage can be used to splint the fracture and provide patient comfort. Antibiotics that cover for oral flora are indicated for open fractures. Penicillin G or clindamycin are recommended.<sup>4,33</sup> Most open fractures require admission. Patients with closed fracture can consider discharge with close (<72 hour) facial surgeon follow-up.<sup>4,33</sup></p>
-    <p>Further discussion on mandibular fractures can be found here: <span class="link">Mandibular Fractures</span></p>
-    </div>
-<div class="section">
-    <h3>Dental Trauma</h3> 
-    <p>Dental injuries are commonly associated with facial trauma. Assessment of malocclusion and close inspection and percussion of teeth is required for evaluation, with the goal of determining the necessity for close dental follow-up. Cracks in the enamel (infractions) or fractures isolated to the enamel (Ellis class I fractures) do not require urgent dental consultation. If the dentin is involved, this is an Ellis class II fracture, characterized by yellow tissue and sensitivity to air or temperature. These cases require ionomer dental cement application to the exposed dentin and dental evaluation within 24-48 hours. If a pink blush to the dentin (suggesting dentin <0.5mm thick) or if bleeding pulp is seen (Ellis class III), a base of calcium hydroxide should be applied prior to dental cement. Fractures involving the root, alveolar ridge fractures, and luxation injuries require repositioning as well as possible, splinting in the emergency department, and urgent dental evaluation in 24-48 hours. Avulsed teeth should be placed in a physiologic solution (milk, saline, saliva, Hank’s solution) and replanted as soon as possible regardless of dry time, although best prognosis is <60 min dry time. The avulsed tooth should be splinted and patients should receive antibiotic prophylaxis with doxycycline as well as dental follow-up within 1 week.<sup>4,34,35</sup></p>
-</div>
-<div class="section">
-    <h3>Auricular Injuries</h3>
-    <p>The external ear is an exposed structure and is prone to injury in the setting of head trauma. Auricular hematomas and small lacerations with exposed cartilage are within the scope of emergency physicians, with the goal to minimize risk of ischemia or infection of the cartilage to preserve form and cosmesis of the auricle. Auricular hematomas should be drained by incision and drainage, which is preferred over needle aspiration for its lower risk of recurrence. The area is then buttressed with dental rolls, compression dressing, or through-and-through mattress sutures. Patients should be referred to ENT for revaluation in 24-48 hours.<sup>36,37</sup> Ear lacerations less than 2 cm can be considered for primary closure if good approximation of the skin and cartilage can be achieved without too much tension. Larger lacerations or those with difficulty achieving good approximation or coverage of cartilage will need to be referred to ENT or plastics specialist for more advanced techniques. 4-0 or 5-0 absorbable sutures should be used to gently approximate the fragile cartilage, although this is often not necessary if good approximation is achieved with skin sutures.<sup>37,38</sup> No evidence supports the use of empiric prophylactic antibiotics in either of the above cases, although it is reasonable to consider prophylactic antibiotics in cases of soiled wounds, exposed cartilage, or immunocompromised patients. Pseudomonal coverage is needed, with ciprofloxacin being the most common oral choice.<sup>39</sup></p>
-</div>
-<div class="section">
-    <h2>Case Recap</h2>
-    <p>The patient with significant facial trauma was quickly evaluated for other immediate life threats and determined to be suitable for an awake intubation with ketamine. The team was prepared for a surgical airway, but the patient was successfully intubated on the first pass with video laryngoscopy and copious suctioning. Anterior nasal and intraoral packing were used to help control bleeding.</p>
-    <p>Further examination revealed telecanthus, midface instability, and deformity of the mandible with mucosal tears adjacent to the inferior alveolar ridge. Following CTs of the head and maxillofacial skeleton, the patient was found to have a combination Le Fort I/II fracture, left medial orbital blowout fracture, and comminuted mandibular fracture as well as some areas of hemorrhagic cerebral contusion. Prophylactic antibiotics for open mandibular and sinus fractures was initiated with IV clindamycin. The patient was subsequently admitted to the surgical ICU with neurosurgical and plastic surgery consultations.</p>
-</div>
-<div class="section">
-    <h2>Summary/Learning Points</h2>
-    <ul>
-        <li>Table 1 summarizes the recommended disposition and management of patients with maxillofacial injuries.</li>
-        <li>Anticipate a difficult airway and try to predict challenges based on injury pattern. Be prepared for cricothyrotomy. Consider awake intubation.</li>
-        <li>Anterior nasal, posterior nasal, and intraoral packing are mainstays of hemorrhage control. Use caution when placing anything through the nose to avoid malposition intracranially.</li>
-        <li>Facial CT is the imaging modality of choice for the facial skeleton.</li>
-        <li>In cases of frontal bone fracture, pay closest attention to the posterior table of the frontal sinus.</li>
-        <li>Orbital bone fractures require close inspection for associated injuries to the eye or other orbital structures. Extraocular muscle entrapment warrants urgent consultation.</li>
-        <li>Nasal injury requires a good internal exam for septal hematoma.</li>
-        <li>Le Fort fractures are high-mechanism injuries; they will usually be admitted for IV antibiotics and surgery.</li>
-        <li>Mandibular fractures require a thorough internal exam to rule out open fracture. The tongue blade test is a useful bedside screening tool.</li>
-        <li>Open fractures or those with sinus involvement require antibiotic prophylaxis. Amoxicillin-clavulanate is usually a good choice.</li>
-    </ul>
-</div>
-<div class="section">
-    <h4>Table 1: Summary of common maxillofacial injuries with recommended disposition and follow-up</h4>
-    <img src="/images/Screen-Shot-2022-10-13-at-7.45.00-AM.png.webp">
-    <img src="/images/Screen-Shot-2022-10-13-at-7.45.16-AM.png.webp">
-    <img src="/images/Screen-Shot-2022-10-13-at-7.49.44-AM.png.webp">
-</div>
-<div class="section">
-    <h2>References / Further Reading</h2>
-    <ol>
-       <li>Alvi A, Doherty T, Lewen G. Facial Fractures and Concomitant Injuries in Trauma Patients. The Laryngoscope. 2003;113(1):102-106. doi:10.1097/00005537-200301000-00019</li>
-        <li>Sethi RKV, Kozin ED, Fagenholz PJ, Lee DJ, Shrime MG, Gray ST. Epidemiological Survey of Head and Neck Injuries and Trauma in the United States. Otolaryngology–Head and Neck Surgery. 2014;151(5):776-784. doi:10.1177/0194599814546112</li>
-        <li>Stewart RM. ATLS: Advanced Trauma Life Support: Student Course Manual. Chicago: American College of Surgeons; 2018.</li>
-        <li>Tintinalli JE. Tintinalli’s Emergency Medicine. New York: McGraw-Hill Medical; 2020.</li>
-        <li>Hutchison I, Lawlor M, Skinner D. ABC of major trauma. Major maxillofacial injuries. British Medical Journal. 1990;301(6752):595-599.</li>
-        <li>Muzzi DA, Losasso TJ, Cucchiara RF. Complication from a Nasopharyngeal Airway in a Patient with a Basilar Skull Fracture. Anesthesiology. 1991;74(2):366-367. doi:10.1097/00000542-199102000-00026</li>
-        <li>Schade K, Borzotta A, Michaels AA. Intracranial Malposition of Nasopharyngeal Airway. The Journal of Trauma: Injury, Infection, and Critical Care. 2000;49(5):967-968. doi:10.1097/00005373-200011000-00032</li>
-        <li>Hirabayashi Y, Fujita A, Seo N, Sugimoto H. Cervical spine movement during laryngoscopy using the Airway Scope compared with the Macintosh laryngoscope. Anaesthesia. 2007 Oct;62(10):1050-5. doi: 10.1111/j.1365-2044.2007.05188.x. PMID: 17845658.</li>
-        <li>Brown CA, Sakles JC, Mick NW. The Walls Manual of Emergency Airway Management. Philadelphia, PA: Wolters Kluwer; 2018.</li>
-        <li>Jose A, Nagori SA, Agarwal B, Bhutia O, Roychoudhury A. Management of maxillofacial trauma in emergency: An update of challenges and controversies. J Emerg Trauma Shock. 2016;9(2):73-80. doi:10.4103/0974-2700.179456</li>
-        <li>Myga-Porosiło J, Skrzelewski S, Sraga W, Borowiak H, Jackowska Z, Kluczewska E. CT Imaging of facial trauma. Role of different types of reconstruction. Part I – bones. Pol J Radiol. 2011;76(1):41-51.</li>
-        <li>Boyette JR, Pemberton JD, Bonilla-Velez J. Management of orbital fractures: challenges and solutions. Clin Ophthalmol. 2015;9:2127-2137. Published 2015 Nov 17. doi:10.2147/OPTH.S80463</li>
-        <li>Marinaro J, Crandall CS, Doezema D. Computed tomography of the head as a screening examination for facial fractures. Am J Emerg Med. 2007 Jul;25(6):616-9. doi: 10.1016/j.ajem.2006.11.029. PMID: 17606084.</li>
-        <li>Goh SH, Low BY. Radiologic screening for midfacial fractures: a single 30-degree occipitomental view is enough. J Trauma. 2002 Apr;52(4):688-92. doi: 10.1097/00005373-200204000-00012. PMID: 11956383.</li>
-        <li>Truong AQ, O’Brien DC, Strong EB, Dublin A. Lateral pterygoid plate fractures associated with mandible fractures. JAMA Facial Plast Surg. 2014 Nov-Dec;16(6):437-9. doi: 10.1001/jamafacial.2014.645. PMID: 25211530.</li>
-        <li>Sutton-Ramsey D. Facial Fractures. Core EM. https://coreem.net/core/facial-fractures/. Published 2018. Accessed December 14, 2020.</li>
-        <li>Jeyaraj P. Frontal bone fractures and frontal sinus injuries: Treatment paradigms. Ann Maxillofac Surg. 2019;9(2):261-282. doi:10.4103/ams.ams_151_19</li>
-        <li>Vasudev S, Reddy KS. Trigemino-cardiac reflex during orbital floor reconstruction: a case report and review. J Maxillofac Oral Surg. 2015 Mar;14(Suppl 1):32-7. doi: 10.1007/s12663-011-0271-4. Epub 2011 Aug 10. PMID: 25861181; PMCID: PMC4379254.</li>
-        <li>Roth FS, Koshy JC, Goldberg JS, Soparkar CN. Pearls of orbital trauma management. Semin Plast Surg. 2010;24(4):398-410. doi:10.1055/s-0030-1269769</li>
-        <li>Kucik CJ, Clenney T, Phelan J. Management of acute nasal fractures. Am Fam Physician. 2004 Oct 1;70(7):1315-20. PMID: 15508543.</li>
-        <li>Fusetti S, Cornelius C, Gellrich N et al. Closed reduction for Nasal bone. Surgeryreference.aofoundation.org. https://surgeryreference.aofoundation.org/cmf/trauma/midface/nasal-bone/closed-reduction. Published 2020. Accessed December 18, 2020.</li>
-        <li>Kelley BP, Downey CR, Stal S. Evaluation and reduction of nasal trauma. Semin Plast Surg. 2010;24(4):339-347. doi:10.1055/s-0030-1269763</li>
-        <li>Hasler RM, Exadaktylos AK, Bouamra O, Benneker LM, Clancy M, Sieber R, Zimmermann H, Lecky F. Epidemiology and predictors of cervical spine injury in adult major trauma patients: a multicenter cohort study. J Trauma Acute Care Surg. 2012 Apr;72(4):975-81. doi: 10.1097/TA.0b013e31823f5e8e. PMID: 22491614.</li>
-        <li>Phillips BJ, Turco LM. Le Fort Fractures: A Collective Review. Bulletin of Emergency and Trauma. 2017 Oct;5(4):221-230. DOI: 10.18869/acadpub.beat.5.4.499.</li>
-        <li>Lee KH. Epidemiology of mandibular fractures in a tertiary trauma centre. Emerg Med J. 2008 Sep;25(9):565-8. doi: 10.1136/emj.2007.055236. PMID: 18723703.</li>
-        <li>Escott EJ, Branstetter BF. Incidence and characterization of unifocal mandible fractures on CT. AJNR Am J Neuroradiol. 2008 May;29(5):890-4. doi: 10.3174/ajnr.A0973. Epub 2008 Feb 13. PMID: 18272555.</li>
-        <li>Ceallaigh PO, Ekanaykaee K, Beirne CJ, Patton DW. Diagnosis and management of common maxillofacial injuries in the emergency department. Part 2: mandibular fractures. Emerg Med J. 2006;23(12):927-928. doi:10.1136/emj.2006.035956</li>
-        <li>Alonso LL, Purcell TB. Accuracy of the tongue blade test in patients with suspected mandibular fracture. J Emerg Med. 1995 May-Jun;13(3):297-304. doi: 10.1016/0736-4679(95)00006-v. PMID: 7673618.</li>
-        <li>Lin M. Trick of the Trade: A tongue blade is as mighty as an xray. ALiEM. https://www.aliem.com/trick-of-trade-tongue-blade-is-as/. Published 2010. Accessed December 19, 2020.</li>
-        <li>Nair, M.K. and Nair, U.P. (2001), Imaging of Mandibular Trauma: ROC Analysis. Academic Emergency Medicine, 8: 689-695. https://doi.org/10.1111/j.1553-2712.2001.tb00186.x</li>
-        <li>Roth FS, Kokoska MS, Awwad EE, Martin DS, Olson GT, Hollier LH, Hollenbeak CS. The identification of mandible fractures by helical computed tomography and panorex tomography. J Craniofac Surg. 2005 May;16(3):394-9. doi: 10.1097/01.scs.0000171964.01616.a8. PMID: 15915103.</li>
-        <li>Wilson IF, Lokeh A, Benjamin CI, Hilger PA, Hamlar DD, Ondrey FG, Tashjian JH, Thomas W, Schubert W. Prospective comparison of panoramic tomography (zonography) and helical computed tomography in the diagnosis and operative management of mandibular fractures. Plast Reconstr Surg. 2001 May;107(6):1369-75. doi: 10.1097/00006534-200105000-00008. PMID: 11335803.</li>
-        <li>Murray JM. Mandible fractures and dental trauma. Emerg Med Clin North Am. 2013 May;31(2):553-73. doi: 10.1016/j.emc.2013.02.002. PMID: 23601489.</li>
-        <li>DiAngelis, A.J., Andreasen, J.O., Ebeleseder, K.A., Kenny, D.J., Trope, M., Sigurdsson, A., Andersson, L., Bourguignon, C., Flores, M.T., Hicks, M.L., Lenzi, A.R., Malmgren, B., Moule, A.J., Pohl, Y. and Tsukiboshi, M. (2012), International Association of Dental Traumatology guidelines for the management of traumatic dental injuries: 1. Fractures and luxations of permanent teeth. Dental Traumatology, 28: 2-12. https://doi.org/10.1111/j.1600-9657.2011.01103.x</li>
-        <li>Andersson, L., Andreasen, J.O., Day, P., Heithersay, G., Trope, M., DiAngelis, A.J., Kenny, D.J., Sigurdsson, A., Bourguignon, C., Flores, M.T., Hicks, M.L., Lenzi, A.R., Malmgren, B., Moule, A.J. and Tsukiboshi, M. (2012), International Association of Dental Traumatology guidelines for the management of traumatic dental injuries: 2. Avulsion of permanent teeth. Dental Traumatology, 28: 88-96. https://doi.org/10.1111/j.1600-9657.2012.01125.x</li>
-        <li>Eagles, K., Fralich, L. and Stevenson, J., 2013. Ear Trauma. Clinics in Sports Medicine, 32(2), pp.303-316.</li>
-        <li>Roy, S. and Smith, L., 2010. A novel technique for treating auricular hematomas in mixed martial artists (ultimate fighters). American Journal of Otolaryngology, 31(1), pp.21-24.</li>
-        <li>Falcon-Chevere, J., Giraldez, L., Rivera-Rivera, J. and Suero-Salvador, T., 2013. Critical ENT Skills and Procedures in the Emergency Department. Emergency Medicine Clinics of North America, 31(1), pp.29-58.</li>
-        <li>Emergency Medicine Journal, 2012. BET 2: No evidence for prophylactic antibiotics in pinna laceration. 29(9), pp.777.1-777.</li>
-    </ol>
-</div>
+
 </body>
 </html>
