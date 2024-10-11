@@ -3,76 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>EVALER14</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 40px;
-    }
-    .header {
-        text-align: center;
-        margin-bottom: 50px;
-    }
-    .header h1 {
-        font-size: 24px;
-        color: #333;
-    }
-    .author {
-        font-size: 16px;
-        font-weight: bold;
-        color: #666;
-        text-align: left;
-        margin-bottom: 20px;
-    }
-    .section {
-        margin-bottom: 20px;
-    }
-    .section h2 {
-        color: #0275d8;
-        font-size: 20px;
-    }
-    .section h3 {
-        color: #0275d8;
-        font-size: 16px;
-    }
-    .section h4 {
-        color: #333;
-        font-size: 14px;
-    }
-    .lighter {
-        font-weight: lighter;
-    }
-    .list {
-        margin-left: 20px;
-        list-style-type: disc;
-    }
-    .link {
-        text-decoration: underline;
-        color: #0275d8;
-    }
-    img {
-  max-width: 100%;
-  height: auto;
-    }
-    .question {
-            margin-bottom: 15px;
-        }
-    .question-number {
-            margin-bottom: 5px;
-        }
-    .options{
-            margin-left: 20px;
-            margin-bottom: 30px;
-        }
-    .answer {
-            font-weight: bold;
-            margin-left: 20px;
-        }
-    .answer-explanation {
-            margin-left: 20px;
-            margin-bottom: 20px;
-        }
-</style>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
 </head>
 <body>
 <div class="header">
@@ -136,14 +68,20 @@
     <div class="question">
         <div class="question-number"><span class="bold">1.</span> A 25-year-old previously healthy woman presents with recurrent pain from her temporomandibular joint disorder (TMD). The pain is described as being dull, and it worsens during the course of the day. Physical examination is remarkable for mild tenderness to palpation over the temporomandibular joint (TMJ) and some spasm noted over the masseter and internal pterygoid. Which of the following statements regarding the patient’s management is <em>true</em>?</div>
         <div class="options">
-            a. A computed tomography (CT) scan of the face would be helpful.<br>
-            b. A Panorex should be obtained.<br>
-            c. Patient should be prescribed narcotic agents.<br>
-            d. Treatment consists of external application of heat for 15 minutes four to six times per day, soft diet, analgesics including nonsteroidal antiinflammatory drugs (NSAIDs).<br>
-            e. Ultrasound of the joint should be obtained.
+            <span>A. A computed tomography (CT) scan of the face would be helpful.</span>
+            <span>B. A Panorex should be obtained.</span>
+            <span>C. Patient should be prescribed narcotic agents.</span>
+            <span>D. Treatment consists of external application of heat for 15 minutes four to six times per day, soft diet, analgesics including nonsteroidal antiinflammatory drugs (NSAIDs).</span>
+            <span>E. Ultrasound of the joint should be obtained.</span>
         </div>
-        <div class="answer">Answer: d.</div>
+        <div class="toggle-answer">
+            <span class="triangle"></span>
+            <span class="toggle-text">Show Answer</span>
+        </div>
+        <div class="answer-container hidden">
+        <div class="answer">Answer: D.</div>
         <div class="answer-explanation">TMJ radiographs are not helpful. Treatment consists of the external application of heat for 15 minutes four to six times per day, soft diet, analgesics including NSAIDs, and consideration of a muscle relaxant, such as diazepam (2 to 10 mg up to four times per day). Patients should be referred to a dentist specializing in TMD, such as a periodontist or a periodontal prosthodontist.</div>
+    </div>
     </div>
 </div>
 </body>

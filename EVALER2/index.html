@@ -3,142 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>EVALER2</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 40px;
-    }
-    .header {
-        text-align: center;
-        margin-bottom: 50px;
-    }
-    .header h1 {
-        font-size: 24px;
-        color: #333;
-    }
-    .author {
-        font-size: 16px;
-        font-weight: bold;
-        color: #666;
-        text-align: left;
-        margin-bottom: 20px;
-    }
-    .section {
-        margin-bottom: 20px;
-    }
-    .section h2 {
-        color: #0275d8;
-        font-size: 20px;
-        margin-bottom: 5px;
-        margin-top: 5px;
-    }
-    .section h3 {
-        color: #0275d8;
-        font-size: 18px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    .section h4 {
-        color: #333;
-        font-size: 16px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    .section h5 {
-        color: #333;
-        font-size: 14px;
-        margin-top:5px;
-    }
-    .section p {
-        margin-top:5px;
-    }
-    .lighter {
-        font-weight: lighter;
-    }
-    .list {
-        margin-left: 20px;
-        list-style-type: disc;
-    }
-    .link {
-        text-decoration: underline;
-        color: #0275d8;
-    }
-    img {
-        float: left;
-        margin: 10px auto;
-        max-width: 100%;
-        height: auto;
-    }
-    .key-concepts-box {
-            width: 80%;
-            border: 2px solid #0275d8;
-            background-color: #d9e2eb;
-            padding: 20px;
-            margin: 20px auto;
-        }
-        .key-concepts-title {
-            background-color: #0275d8;
-            color: white;
-            padding: 10px;
-            margin: -20px -20px 10px -20px;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .key-concepts-list {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        .key-concepts-list li {
-            margin-bottom: 10px;
-        }
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 20px;
-        font-size: 14px;
-        float: left;
-    }
-    th, td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        text-align: left;
-    }
-    th {
-        background-color: #f2f2f2;
-        font-weight: bold;
-    }
-    caption {
-        caption-side: top;
-        text-align: left;
-        font-weight: bold;
-        padding: 10px 0;
-    }
-    .small {
-        font-size: 70%;
-    }
-    .bold {
-        font-weight: bold;
-    }
-    .question {
-            margin-bottom: 15px;
-        }
-    .question-number {
-            margin-bottom: 5px;
-        }
-    .options{
-            margin-left: 20px;
-            margin-bottom: 30px;
-        }
-    .answer {
-            font-weight: bold;
-            margin-left: 20px;
-        }
-    .answer-explanation {
-            margin-left: 20px;
-            margin-bottom: 20px;
-        }
-</style>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
 </head>
 <body>
 <div class="header">
@@ -601,53 +467,78 @@
     <div class="question">
         <div class="question-number"><span class="bold">1.</span> A nasal fracture complication that requires urgent treatment is:</div>
         <div class="options">
-            A. Periorbital swelling<br>
-            B. Septal hematoma<br>
-            C. Laceration<br>
-            D. Epistaxis<br>
-            E. Subcutaneous edema
+            <span>A. Periorbital swelling</span>
+            <span>B. Septal hematoma</span>
+            <span>C. Laceration</span>
+            <span>D. Epistaxis</span>
+            <span>E. Subcutaneous edema</span>
         </div>
+        <div class="toggle-answer">
+            <span class="triangle"></span>
+            <span class="toggle-text">Show Answer</span>
+        </div>
+        <div class="answer-container hidden">
         <div class="answer">Answer: B.</div>
         <div class="answer-explanation">A septal hematoma is a collection of blood within the nasal septum that can occur following trauma. A septal hematoma should be drained promptly to avoid the risk of developing a septal abscess or ischemia of the septal cartilage leading to a saddle nose deformity. With the use of an anesthetic, the hematoma can be aspirated or incised, drained, and packed to avoid reoccurrence.</div>
+    </div>
     </div>
 
     <div class="question">
         <div class="question-number"><span class="bold">2.</span> A patient with a mandibular fracture may complain of:</div>
         <div class="options">
-            A. Trismus<br>
-            B. Epistaxis<br>
-            C. Paresthesias of the inferior eyelid, nose, and upper lip<br>
-            D. Ocular muscle entrapment<br>
-            E. Postnasal drip and sweet taste in the mouth
+            <span>A. Trismus</span>
+            <span>B. Epistaxis</span>
+            <span>C. Paresthesias of the inferior eyelid, nose, and upper lip</span>
+            <span>D. Ocular muscle entrapment</span>
+            <span>E. Postnasal drip and sweet taste in the mouth</span>
         </div>
+        <div class="toggle-answer">
+            <span class="triangle"></span>
+            <span class="toggle-text">Show Answer</span>
+        </div>
+        <div class="answer-container hidden">
         <div class="answer">Answer: A.</div>
         <div class="answer-explanation">Individuals with mandibular fractures may report pain with chewing, abnormal bite, jaw malalignment, paresthesias of the lip and chin area, trismus, oral bleeding, and dental injuries. An orthopantomogram (Panorex) has 92% sensitivity in the diagnosis of a mandibular fracture; however, when there is high clinical suspicion or concern for associated traumatic injuries a facial CT scan should be obtained. Epistaxis can be seen with isolated nasal fractures as well as maxillary fractures. Postnasal drip and a sweet taste in the mouth could be related to a CSF leak, which can be seen in frontal and nasal bone fractures. Ocular muscle entrapment can be related to orbital and midface fractures.</div>
+        </div>
     </div>
 
     <div class="question">
         <div class="question-number"><span class="bold">3.</span> A patient presents following a physical altercation complaining of eye pain, decreased vision, and swelling. On physical examination he is noted to have periorbital ecchymosis, swelling, and tenderness, an irregular, tear-shaped pupil, and a collection of blood in the anterior chamber of the eye. Which of the following diagnostic or treatment options should be avoided?</div>
         <div class="options">
-            A. CT imaging of the face<br>
-            B. Ophthalmologic consultation<br>
-            C. Prophylactic antibiotics<br>
-            D. Thorough eye examination including tonometry<br>
-            E. Medications for pain and nausea and place patient in semirecumbent position
+            <span>A. CT imaging of the face</span>
+            <span>B. Ophthalmologic consultation</span>
+            <span>C. Prophylactic antibiotics</span>
+            <span>D. Thorough eye examination including tonometry</span>
+            <span>E. Medications for pain and nausea and place patient in semirecumbent position</span>
         </div>
-        <div class="answer">Answer: D.</div>
-        <div class="answer-explanation"> The patient is presenting with a history of blunt trauma and examination findings consistent for a globe rupture. A thorough history including mechanism and anticoagulant use should be obtained. CT imaging should be performed to look for additional traumatic injuries. The patient should be medicated for pain and nausea to avoid any increase in intraocular pressures resulting in possible aqueous fluid loss. Prophylactic antibiotics are initiated to prevent secondary endophthalmitis. The affected eye should not be manipulated, a rigid shield should be used for protection, and ophthalmology should be emergently consulted.</div>
+        <div class="toggle-answer">
+            <span class="triangle"></span>
+            <span class="toggle-text">Show Answer</span>
+        </div>
+        <div class="answer-container hidden">
+            <div class="answer">Answer: D.</div>
+            <div class="answer-explanation">The patient is presenting with a history of blunt trauma and examination findings consistent for a globe rupture. A thorough history including mechanism and anticoagulant use should be obtained. CT imaging should be performed to look for additional traumatic injuries. The patient should be medicated for pain and nausea to avoid any increase in intraocular pressures resulting in possible aqueous fluid loss. Prophylactic antibiotics are initiated to prevent secondary endophthalmitis. The affected eye should not be manipulated, a rigid shield should be used for protection, and ophthalmology should be emergently consulted.</div>
+        </div>
     </div>
 
     <div class="question">
         <div class="question-number"><span class="bold">4.</span> Cribriform plate fractures can be associated with:</div>
         <div class="options">
-            A. LeFort I fracture<br>
-            B. CSF rhinorrhea<br>
-            C. Dental alveolar fractures<br>
-            D. Ageusia<br>
-            E. Tripod fractures
+            <span>A. LeFort I fracture</span>
+            <span>B. CSF rhinorrhea</span>
+            <span>C. Dental alveolar fractures</span>
+            <span>D. Ageusia</span>
+            <span>E. Tripod fractures</span>
         </div>
-        <div class="answer">Answer: B.</div>
-        <div class="answer-explanation"> Cribriform plate fractures are commonly associated with severe traumatic injuries including TBI and CSI. Symptoms can include tenderness, swelling, bleeding, CSF rhinorrhea, and anosmia. More complex midface fractures, LeFort III, or significant nasal trauma affecting the NOE complex are associated with fractures of the cribriform plate. ATLS guidelines should be followed when evaluating this patient. CT imaging including head, C-spine, and face are obtained and a CTA to evaluate for blunt cerebrovascular injury is often performed. Appropriate specialists (neurosurgery) should be consulted and involved in the patient’s care.</div>
+        <div class="toggle-answer">
+            <span class="triangle"></span>
+            <span class="toggle-text">Show Answer</span>
+        </div>
+        <div class="answer-container hidden">
+            <div class="answer">Answer: B.</div>
+            <div class="answer-explanation">Cribriform plate fractures are commonly associated with severe traumatic injuries including TBI and CSI. Symptoms can include tenderness, swelling, bleeding, CSF rhinorrhea, and anosmia. More complex midface fractures, LeFort III, or significant nasal trauma affecting the NOE complex are associated with fractures of the cribriform plate. ATLS guidelines should be followed when evaluating this patient. CT imaging including head, C-spine, and face are obtained and a CTA to evaluate for blunt cerebrovascular injury is often performed. Appropriate specialists (neurosurgery) should be consulted and involved in the patient's care.</div>
+        </div>
     </div>
+</div>
 </body>
 </html>

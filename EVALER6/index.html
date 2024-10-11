@@ -3,164 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>EVALER6</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 40px;
-    }
-    .header {
-        text-align: center;
-        margin-bottom: 50px;
-    }
-    .header h1 {
-        font-size: 24px;
-        color: #333;
-    }
-    .author {
-        font-size: 16px;
-        font-weight: bold;
-        color: #666;
-        text-align: left;
-        margin-bottom: 20px;
-    }
-    .section {
-        margin-bottom: 20px;
-    }
-    .section h2 {
-        color: #0275d8;
-        font-size: 20px;
-        margin-bottom: 5px;
-        margin-top: 5px;
-    }
-    .section h3 {
-        color: #0275d8;
-        font-size: 18px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    .section h4 {
-        color: #333;
-        font-size: 16px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    .section h5 {
-        color: #333;
-        font-size: 14px;
-        margin-top:5px;
-    }
-    .section p {
-        margin-top:5px;
-    }
-    .lighter {
-        font-weight: lighter;
-    }
-    .list {
-        margin-left: 20px;
-        list-style-type: disc;
-    }
-    .link {
-        text-decoration: underline;
-        color: #0275d8;
-    }
-    img {
-        display: block;
-        margin: 20px auto;
-        max-width: 100%;
-        height: auto;
-    }
-    .key-concepts-box {
-            width: 80%;
-            border: 2px solid #0275d8;
-            background-color: #d9e2eb;
-            padding: 20px;
-            margin: 20px auto;
-        }
-        .key-concepts-title {
-            background-color: #0275d8;
-            color: white;
-            padding: 10px;
-            margin: -20px -20px 10px -20px;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .key-concepts-list {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        .key-concepts-list li {
-            margin-bottom: 10px;
-        }
-        .box {
-            width: 80%;
-            border: 2px solid #0275d8;
-            background-color: #d9e2eb;
-            font-size: 14px;
-            padding: 10px;
-            margin: 10px auto;
-        }
-        .box-title {
-            background-color: #0275d8;
-            color: white;
-            padding: 10px;
-            margin: -10px -10px 10px -10px;
-            font-size: 14px;
-            font-weight: bold;
-        }
-        .box-list {
-            list-style-type: disc;
-            padding: 10px;
-        }
-        .box li {
-            margin-bottom: 10px;
-        }
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 20px;
-        font-size: 14px;
-    }
-    th, td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        text-align: left;
-    }
-    th {
-        background-color: #f2f2f2;
-        font-weight: bold;
-    }
-    caption {
-        caption-side: top;
-        text-align: left;
-        font-weight: bold;
-        padding: 10px 0;
-    }
-    .small {
-        font-size: 70%;
-    }
-    .bold {
-        font-weight: bold;
-    }
-    .question {
-            margin-bottom: 15px;
-        }
-    .question-number {
-            margin-bottom: 5px;
-        }
-    .options{
-            margin-left: 20px;
-            margin-bottom: 30px;
-        }
-    .answer {
-            font-weight: bold;
-            margin-left: 20px;
-        }
-    .answer-explanation {
-            margin-left: 20px;
-            margin-bottom: 20px;
-        }
-</style>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
 </head>
 <body>
 <div class="header">
@@ -260,14 +104,20 @@
     <div class="question">
         <div class="question-number"><span class="bold">1.</span> A 28-year-old G3P0 at 34 weeks of gestation presents with new-onset seizures. The patient has multiple seizures in the ED and is noted to be hypertensive at a blood pressure of 164/87 mm Hg. Which of the following should be administered next?</div>
         <div class="options">
-            A. Benzodiazepines<br>
-            B. Calcium gluconate<br>
-            C. Labetalol<br>
-            D. Magnesium sulfate<br>
-            E. Pralidoxime
+            <span>A. Benzodiazepines</span>
+            <span>B. Calcium gluconate</span>
+            <span>C. Labetalol</span>
+            <span>D. Magnesium sulfate</span>
+            <span>E. Pralidoxime</span>
         </div>
+        <div class="toggle-answer">
+            <span class="triangle"></span>
+            <span class="toggle-text">Show Answer</span>
+        </div>
+        <div class="answer-container hidden">
         <div class="answer">Answer: D.</div>
         <div class="answer-explanation">Magnesium sulfate has little antihypertensive effect but is the most effective anticonvulsant, preventing recurrent seizures while maintaining uterine and fetal blood flow. A loading dose of 4 g intravenous (IV) magnesium, followed by 2 g IV/hr, is recommended.</div>
+    </div>
     </div>
 </body>
 </html>

@@ -3,158 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>EVALER18</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 40px;
-    }
-    .header {
-        text-align: center;
-        margin-bottom: 50px;
-    }
-    .header h1 {
-        font-size: 24px;
-        color: #333;
-    }
-    .author {
-        font-size: 16px;
-        font-weight: bold;
-        color: #666;
-        text-align: left;
-        margin-bottom: 20px;
-    }
-    .section {
-        margin-bottom: 20px;
-    }
-    .section h2 {
-        color: #0275d8;
-        font-size: 20px;
-        margin-bottom: 5px;
-        margin-top: 5px;
-    }
-    .section h3 {
-        color: #0275d8;
-        font-size: 18px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    .section h4 {
-        color: #333;
-        font-size: 16px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    .section h5 {
-        color: #333;
-        font-size: 14px;
-        margin-top:5px;
-    }
-    .section p {
-        margin-top:5px;
-    }
-    .list {
-        margin-left: 20px;
-        list-style-type: disc;
-    }
-    .link {
-        text-decoration: underline;
-        color: #0275d8;
-    }
-    img {
-        display: block;
-        margin: 20px auto;
-        max-width: 100%;
-        height: auto;
-    }
-    .key-concepts-box {
-            width: 80%;
-            border: 2px solid #0275d8;
-            background-color: #d9e2eb;
-            padding: 20px;
-            margin: 20px auto;
-        }
-        .key-concepts-title {
-            background-color: #0275d8;
-            color: white;
-            padding: 10px;
-            margin: -20px -20px 10px -20px;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .key-concepts-list {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        .key-concepts-list li {
-            margin-bottom: 10px;
-        }
-        .box {
-            width: 80%;
-            border: 2px solid #0275d8;
-            background-color: #d9e2eb;
-            font-size: 14px;
-            padding: 10px;
-            margin: 10px auto;
-        }
-        .box-title {
-            background-color: #0275d8;
-            color: white;
-            padding: 10px;
-            margin: -10px -10px 10px -10px;
-            font-size: 14px;
-            font-weight: bold;
-        }
-        .box-list {
-            list-style-type: disc;
-            padding: 10px;
-        }
-        .box li {
-            margin-bottom: 10px;
-        }
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 20px;
-        font-size: 14px;
-    }
-    th, td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        text-align: left;
-    }
-    th {
-        background-color: #f2f2f2;
-        font-weight: bold;
-    }
-    caption {
-        caption-side: top;
-        text-align: left;
-        padding: 10px 0;
-    }
-    .small {
-        font-size: 70%;
-    }
-
-    .question {
-            margin-bottom: 15px;
-        }
-    .question-number {
-            margin-bottom: 5px;
-        }
-    .options{
-            margin-left: 20px;
-            margin-bottom: 30px;
-        }
-    .answer {
-            font-weight: bold;
-            margin-left: 20px;
-        }
-    .answer-explanation {
-            margin-left: 20px;
-            margin-bottom: 20px;
-        }
-</style>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
 </head>
 <body>
 <div class="header">
@@ -715,35 +565,53 @@
     <div class="question">
         <div class="question-number"><span class="bold">1.</span> Emergency medical services (EMS) notifies your emergency department (ED) that an unknown male who was “found down” is being transported. No history is available. Paramedics report that the patient’s pulse is 42 beats/min and blood pressure is difficult to obtain. Spontaneous respirations are present at a rate of 10 breaths/min. The electrocardiogram (ECG) showing sinus bradycardia is faxed before the patient’s arrival. What treatment should you administer when the patient arrives?</div>
         <div class="options">
-            A. Intravenous epinephrine<br>
-            B. Normal saline bolus<br>
-            C. Synchronized cardioversion<br>
-            D. Warm the patient<br>
+            <span>A. Intravenous epinephrine</span>
+            <span>B. Normal saline bolus</span>
+            <span>C. Synchronized cardioversion</span>
+            <span>D. Warm the patient</span>
         </div>
+        <div class="toggle-answer">
+          <span class="triangle"></span>
+          <span class="toggle-text">Show Answer</span>
+      </div>
+      <div class="answer-container hidden">
         <div class="answer">Answer: D.</div>
         <div class="answer-explanation">Warm the patient. When this hypothermic patient arrives in the ED, after assessment of the airway, the top priority is rapid rewarming. Patients with hypothermia should be actively rewarmed whenever possible. Specific indications for active rather than passive rewarming include trauma, cardiovascular instability, temperature below 32°C (89.6°F), poor rate of passive rewarming, and endocrine insufficiency.</div>
+    </div>
     </div>
     <div class="question">
         <div class="question-number"><span class="bold">2.</span> Rapid rewarming is the mainstay of treatment for hypothermia. However, rewarming can cause complications. Which of the following complications should be anticipated and prevented when rewarming a hypothermic patient?</div>
         <div class="options">
-            A. Hyperkalemia<br>
-            B. Hyponatremia<br>
-            C. Hypotension<br>
-            D. Rhabdomyolysis<br>
+            <span>A. Hyperkalemia</span>
+            <span>B. Hyponatremia</span>
+            <span>C. Hypotension</span>
+            <span>D. Rhabdomyolysis</span>
         </div>
+        <div class="toggle-answer">
+          <span class="triangle"></span>
+          <span class="toggle-text">Show Answer</span>
+      </div>
+      <div class="answer-container hidden">
         <div class="answer">Answer: C.</div>
         <div class="answer-explanation">Hypotension should be anticipated and prevented when rewarming a hypothermic patient. Patients with moderate or severe hypothermia are usually volume depleted. During rewarming, the total plasma volume is usually high, but the circulatory plasma volume is usually low due to increased peripheral vascular resistance. Rapid volume expansion can be lifesaving, especially in hypothermic neonates. Adult patients with moderate or severe hypothermia should initially receive a 500-mL fluid challenge of warmed normal saline. Avoid lactated Ringers solution because the cold liver metabolizes lactate poorly. Fluids administered via the intravenous (IV) route should be warmed to 40°C to 42°C (104°F to 107.6°F).</div>
+    </div>
     </div>
     <div class="question">
         <div class="question-number"><span class="bold">3.</span> A 30-year-old woman in cardiac arrest is brought to the ED by emergency medical services. She was intubated in the field, and chest compressions have been continuously performed. Her temperature is 25°C (77°F). When placed on the cardiac monitor, she is noted to be in ventricular fibrillation. A defibrillation attempt is made at the appropriate setting, but she remains in ventricular fibrillation. A nurse resumes providing chest compressions and asks for further instructions. What should be done next?</div>
         <div class="options">
-            A. IV amiodarone<br>
-            B. IV lidocaine<br>
-            C. IV procainamide<br>
-            D. Warm the patient<br>
+            <span>A. IV amiodarone</span>
+            <span>B. IV lidocaine</span>
+            <span>C. IV procainamide</span>
+            <span>D. Warm the patient</span>
         </div>
+        <div class="toggle-answer">
+          <span class="triangle"></span>
+          <span class="toggle-text">Show Answer</span>
+      </div>
+      <div class="answer-container hidden">
         <div class="answer">Answer: D.</div>
         <div class="answer-explanation">Warm the patient. This severely hypothermic patient needs further rewarming before subsequent defibrillation attempts are made to treat her ventricular fibrillation. Most hypothermia-induced dysrhythmias convert spontaneously during rewarming. Asystole that develops during rewarming is not as ominous as asystole in normothermic patients. For VF, defibrillation should be attempted at the usual energy level. Successful defibrillation has been reported at 20°C (68°F) but attempted defibrillation is often unsuccessful until the core temperature is above 30°C (86°F). If a defibrillation attempt is unsuccessful, active rewarming should be initiated while continuing CPR. Defibrillation can be attempted occasionally during rewarming. Once the core temperature is above 30°C (86°F), further attempts can be made.</div>
+    </div>
     </div>
 </body>
 </html>

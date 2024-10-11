@@ -1,0 +1,245 @@
+/* Improved styles.css */
+
+/* Base Styles */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 40px;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .header h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .author {
+    font-size: 1.1em;
+    color: #7f8c8d;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .author .smaller {
+    font-size: 0.9em;
+    display: block;
+    margin-top: 5px;
+  }
+  
+  /* Sections */
+  .section {
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section h2 {
+    color: #2980b9;
+    font-size: 1.8em;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .section h3, .section h4, .section h5 {
+    color: #34495e;
+  }
+  
+  .section h3 {
+    font-size: 1.4em;
+    margin-top: 25px;
+  }
+  
+  .section h4 {
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+  
+  .section h5 {
+    font-size: 0.8em;
+    color: #7f8c8d;
+    margin-top: 15px;
+  }
+  
+  /* Lists */
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  ul li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  ul li::before {
+    content: '•';
+    color: #3498db;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+  }
+  
+  a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+  }
+  
+  /* Images */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    border: none;
+    padding: 15px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  caption {
+    caption-side: top;
+    text-align: left;
+    font-weight: bold;
+    padding: 10px 0;
+    color: #34495e;
+  }
+  
+  /* Key Concepts Box */
+  .key-concepts-box {
+    width: 90%;
+    border: none;
+    background-color: #ecf0f1;
+    padding: 25px;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .key-concepts-title {
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    margin: -25px -25px 20px -25px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .key-concepts-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .key-concepts-list li {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+  }
+  
+  .key-concepts-list li::before {
+    content: '✓';
+    color: #27ae60;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    body {
+      padding: 20px;
+    }
+    
+    .section {
+      padding: 20px;
+    }
+    
+    .header {
+      padding: 20px;
+    }
+    
+    .header h1 {
+      font-size: 2em;
+    }
+  }
+  
+
+  
+  /* Print styles */
+  @media print {
+    body {
+      font-size: 12pt;
+      line-height: 1.4;
+      background: none;
+      color: #000;
+    }
+  
+    .section {
+      page-break-inside: avoid;
+      box-shadow: none;
+      border: 1px solid #ddd;
+    }
+  
+    a {
+      text-decoration: underline;
+      color: #000;
+    }
+  
+    img {
+      max-width: 100% !important;
+    }
+  
+    @page {
+      margin: 2cm;
+    }
+  }

@@ -3,147 +3,112 @@
 <head>
 <meta charset="UTF-8">
 <title>EVALER5</title>
+<link rel="stylesheet" href="styles.css">
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 40px;
-    }
-    .header {
-        text-align: center;
-        margin-bottom: 50px;
-    }
-    .header h1 {
-        font-size: 24px;
-        color: #333;
-    }
-    .author {
-        font-size: 16px;
-        font-weight: bold;
-        color: #666;
-        text-align: left;
-        margin-bottom: 20px;
-    }
-    .section {
-        margin-bottom: 20px;
-    }
-    .section h2 {
-        color: #0275d8;
-        font-size: 20px;
-    }
-    .section h3 {
-        color: #0275d8;
-        font-size: 16px;
-    }
-    .section h4 {
-        color: #333;
-        font-size: 14px;
-    }
-    .lighter {
-        font-weight: lighter;
-    }
-    .list {
-        margin-left: 20px;
-        list-style-type: disc;
-    }
-    .link {
-        text-decoration: underline;
-        color: #0275d8;
-    }
-    img {
-  max-width: 100%;
-  height: auto;
-    }
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 20px;
-        font-size: 14px;
-    }
-    th, td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        text-align: left;
-    }
-    th {
-        background-color: #f2f2f2;
-        font-weight: bold;
-    }
-    caption {
-        caption-side: top;
-        text-align: left;
-        font-weight: bold;
-        padding: 10px 0;
-    }
-    .labetalol {
-            background-color: #d9e1f2;
-            text-align: center;
-            border: 1px solid
-        }
-        .hydralazine {
-            background-color: #e2efda;
-            text-align: center;
-            border: 1px solid
-        }
-        .nifedipine {
-            background-color: #fae2a2;
-            text-align: center;
-            border: 1px solid
-        }
-        .check-bp {
-            background-color: #d9d9d9;
-            text-align: center;
-            border: 1px solid
-        }
-        .time {
-            border: 1px solid
-        }
+
+
+
+/* Medical Conditions Container */
+/* Improved styles.css */
+
+/* ... (previous styles remain unchanged) ... */
+
+/* Medical Conditions Container */
 .medical-conditions-container {
-    width: 80%;
-    margin: 20px auto;
-    padding-top: 0px;
-    
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding-top: 20px;
 }
 
 .medical-conditions-container .category {
-    margin-bottom: 20px;
-    border: 2px solid #0275d8;
-    background-color: #d9e2eb;
-    position: relative;
+  margin-bottom: 30px;
+  border: none;
+  background-color: #ffffff;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .medical-conditions-container .category .title {
-    position: absolute;
-    top: -12px;
-    left: 20px;
-    background-color: #0275d8;
-    padding: 0 10px;
-    font-weight: bold;
-    border: 2px solid #0275d8;
-    color:white;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #3498db;
+  padding: 15px 20px;
+  font-weight: bold;
+  color: white;
+  font-size: 1.2em;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .medical-conditions-container .category .content {
-    padding: 20px;
+  padding: 20px;
 }
 
 .medical-conditions-container .category .content ul {
-    list-style: none;
-    padding: 0;
-    font-size: 14px;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+  margin: 0;
 }
 
 .medical-conditions-container .category .content ul li {
-    margin-bottom: 0px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
 }
+
+.medical-conditions-container .category .content ul li::before {
+  content: '•';
+  color: #3498db;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Responsive adjustments for Medical Conditions Container */
+@media (max-width: 768px) {
+  .medical-conditions-container {
+    width: 95%;
+  }
+  
+  .medical-conditions-container .category .title {
+    font-size: 1.1em;
+  }
+  
+  .medical-conditions-container .category .content ul {
+    font-size: 14px;
+  }
+}
+
+/* ... (rest of the styles remain unchanged) ... */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .medical-conditions-container {
+    width: 95%;
+  }
+  
+  table {
+    font-size: 12px;
+  }
+  
+  th, td {
+    padding: 8px;
+  }
+}
+
+/* ... (previous print styles remain unchanged) ... */
 </style>
 </head>
 <body>
 <div class="header">
     <h1>Eclampsia in the ED: Presentation, Differential Diagnosis, and Treatment</h1>
-    <p class="author">Authors: Kyrra Engle, ScM (@KyrraEngle, University of Miami Miller School of Medicine); Alessandra Della Porta (@MedEdtweeter, University of Miami Miller School of Medicine); Zoe Kornberg, MD, MPH (Department of Obstetrics and Gynecology, University of Texas Rio Grande Valley); Kasha Bornstein (@BornsteinKasha)
-        <br><br> Reviewed by: Marina Boushra, MD; Alex Koyfman, MD (@EMHighAK); Brit Long, MD (@long_brit)</p>
+    <p class="author">Authors: Kyrra Engle, ScM (University of Miami Miller School of Medicine); Alessandra Della Porta (University of Miami Miller School of Medicine); Zoe Kornberg, MD, MPH (Department of Obstetrics and Gynecology, University of Texas Rio Grande Valley); Kasha Bornstein
+        <br><br> Reviewed by: Marina Boushra, MD; Alex Koyfman, MD; Brit Long, MD</p>
 </div>
 <div class="section">
     <h2>Case</h2>
@@ -204,25 +169,25 @@
 </div>
 <div class="section">
     <h3>Epidemiology</h3>
-    <p>In the United States, eclampsia occurs in approximately 0.3% of live births with significant variation in incidence between states.15 This variation is likely due to differences in screening and the use of magnesium sulfate, economic inequity, quality and access to obstetric care, and the distribution of physical factors associated with eclampsia.15Socioeconomic status has been found to play an important role in the incidence of eclampsia with the presence of public insurance and fewer than five prenatal visits significantly increasing the risk of eclampsia.16 Other factors associated with eclampsia are similar to those for preeclampsia, and include, extremes of maternal age, nulliparity, multiple gestations, obesity, diabetes, and preterm delivery at <32 weeks of gestation.10,16-18 Eclampsia is also more common among women who self-identify as Black or Hispanic for reasons that are multifactorial and likely related to social determinants of health, including access to prenatal care and chronic stress associated with experiences of racial discrimination. 16,17,19,20</p>
+    <p>In the United States, eclampsia occurs in approximately 0.3% of live births with significant variation in incidence between states.<sup>15</sup> This variation is likely due to differences in screening and the use of magnesium sulfate, economic inequity, quality and access to obstetric care, and the distribution of physical factors associated with eclampsia.<sup>15</sup> Socioeconomic status has been found to play an important role in the incidence of eclampsia with the presence of public insurance and fewer than five prenatal visits significantly increasing the risk of eclampsia.16 Other factors associated with eclampsia are similar to those for preeclampsia, and include, extremes of maternal age, nulliparity, multiple gestations, obesity, diabetes, and preterm delivery at &lt;32 weeks of gestation.<sup>10,16-18</sup> Eclampsia is also more common among women who self-identify as Black or Hispanic for reasons that are multifactorial and likely related to social determinants of health, including access to prenatal care and chronic stress associated with experiences of racial discrimination. <sup>16,17,19,20</sup></p>
 </div>
 <div class="section">
     <h3>Maternal Fetal Outcomes</h3>
-    <p>In the acute setting, complications associated with highest morbidity include stroke, coma or persistent loss of consciousness, heart failure, pulmonary edema, venous thrombosis, and disseminated intravascular coagulation. Pregnant patients with a history of eclampsia have a 25% risk of developing eclampsia in subsequent pregnancies and long term sequelae, including a 12-fold risk of cardiovascular-related pathologies, such as myocardial infarction, cerebrovascular disease and heart failure.21 Neonates born to patients with eclampsia are at increased risk of being small for gestational age due to intrauterine growth restriction and complications associated with premature birth, including neonatal respiratory distress syndrome.10,22,23
+    <p>In the acute setting, complications associated with highest morbidity include stroke, coma or persistent loss of consciousness, heart failure, pulmonary edema, venous thrombosis, and disseminated intravascular coagulation. Pregnant patients with a history of eclampsia have a 25% risk of developing eclampsia in subsequent pregnancies and long term sequelae, including a 12-fold risk of cardiovascular-related pathologies, such as myocardial infarction, cerebrovascular disease and heart failure.<sup>21</sup> Neonates born to patients with eclampsia are at increased risk of being small for gestational age due to intrauterine growth restriction and complications associated with premature birth, including neonatal respiratory distress syndrome.<sup>10,22,23</sup>
     </p>
 </div>
 <div class="section">
     <h3>Time of Onset</h3>
-    <p>Eclampsia can present during the antepartum, intrapartum, or postpartum period.24-26 In the postpartum period, the onset of convulsions may occur within the first 48 hours (early postpartum) or up to six weeks following delivery (late postpartum).24,27 Among eclampsia cases, 59-70% of occur during the antepartum period, around 20- 30% occur during labor (intrapartum), and 20- 30% occur in the postpartum period, including 15- 16% in the late postpartum period.10,26,28,29 In the antepartum period, virtually all eclamptic seizures occur after 28 weeks of gestation. When seen before 20 weeks of gestation, eclampsia is usually associated with a molar pregnancy, multiple gestations, or severe maternal renal disease.5,10,30,31</p>
+    <p>Eclampsia can present during the antepartum, intrapartum, or postpartum period.<sup>24-26</sup> In the postpartum period, the onset of convulsions may occur within the first 48 hours (early postpartum) or up to six weeks following delivery (late postpartum).<sup>24,27</sup> Among eclampsia cases, 59-70% of occur during the antepartum period, around 20- 30% occur during labor (intrapartum), and 20- 30% occur in the postpartum period, including 15- 16% in the late postpartum period.<sup>10,26,28,29</sup> In the antepartum period, virtually all eclamptic seizures occur after 28 weeks of gestation. When seen before 20 weeks of gestation, eclampsia is usually associated with a molar pregnancy, multiple gestations, or severe maternal renal disease.<sup>5,10,30,31</sup></p>
 </div>
 <div class="section">
     <h2>Presentation</h2>
-    <p>More than 50% of eclamptic seizures are preceded by prodromal symptoms.14,26,32 The most common reported symptoms are headache (66-82%), visual disturbances (27-44%), and epigastric pain (25%).14,29,33 Visual disturbances include blurry vision, diplopia, scotoma, photopsia, and transient cortical blindness.10,34,35 However, none of these symptoms have been found to accurately predict, or rule out, imminent eclampsia.8,14,29,36 Additionally, if the patient is unresponsive and records or family members are unavailable, it may not be possible to evaluate for these prodromal symptoms.5 For this reason, many clinicians rely on exam findings and laboratory evidence of eclampsia including hypertension and proteinuria.</p>
-    <p>While hypertension has long been recognized as a manifestation of preeclampsia and a warning sign for eclampsia, the degree of hypertension may not always predict the risk of eclampsia.30 Approximately 20% of eclampsia cases occur in patients with only mild hypertension. Furthermore, hypertension may be absent in up to 25% of cases.8-10,29 Severe hypertension is more common in pregnant patients who developed eclampsia in the antepartum period rather than the postpartum period.26</p>
+    <p>More than 50% of eclamptic seizures are preceded by prodromal symptoms.<sup>14,26,32</sup> The most common reported symptoms are headache (66-82%), visual disturbances (27-44%), and epigastric pain (25%).<sup>14,29,33</sup> Visual disturbances include blurry vision, diplopia, scotoma, photopsia, and transient cortical blindness.<sup>10,34,35</sup> However, none of these symptoms have been found to accurately predict, or rule out, imminent eclampsia.<sup>8,14,29,36</sup> Additionally, if the patient is unresponsive and records or family members are unavailable, it may not be possible to evaluate for these prodromal symptoms.<sup>5</sup> For this reason, many clinicians rely on exam findings and laboratory evidence of eclampsia including hypertension and proteinuria.</p>
+    <p>While hypertension has long been recognized as a manifestation of preeclampsia and a warning sign for eclampsia, the degree of hypertension may not always predict the risk of eclampsia.<sup>30</sup> Approximately 20% of eclampsia cases occur in patients with only mild hypertension. Furthermore, hypertension may be absent in up to 25% of cases.<sup>8-10,29</sup> Severe hypertension is more common in pregnant patients who developed eclampsia in the antepartum period rather than the postpartum period.<sup>26</sup></p>
 </div>
 <div class="section">
     <h2>Differential Diagnosis</h2>
-    <p>While the evaluation of seizure in pregnant or postpartum patients should begin with a consideration of eclampsia, alternative diagnoses should also be considered in certain circumstances.10 These circumstances include patients with normal blood pressure and the absence of proteinuria, focal neurologic deficits, onset before 20 weeks of gestation or >48 hours after delivery, or prolonged loss of consciousness.10,37 In these cases, the differential diagnosis can generally be broken down into three categories of conditions: exacerbation of known pre-existing seizure disorder (mainly epilepsy), new onset of seizures due to non-pregnancy related problem (eg, metabolic alterations, brain tumors, infections), and neurologic conditions either specific to or frequently occurring during pregnancy.14,38-40 A complete differential diagnosis of seizures that should be taken into consideration is listed below.5,7,10,14</p>
+    <p>While the evaluation of seizure in pregnant or postpartum patients should begin with a consideration of eclampsia, alternative diagnoses should also be considered in certain circumstances.<sup>10</sup> These circumstances include patients with normal blood pressure and the absence of proteinuria, focal neurologic deficits, onset before 20 weeks of gestation or &gt;48 hours after delivery, or prolonged loss of consciousness.<sup>10,37</sup> In these cases, the differential diagnosis can generally be broken down into three categories of conditions: exacerbation of known pre-existing seizure disorder (mainly epilepsy), new onset of seizures due to non-pregnancy related problem (eg, metabolic alterations, brain tumors, infections), and neurologic conditions either specific to or frequently occurring during pregnancy.<sup>14,38-40</sup> A complete differential diagnosis of seizures that should be taken into consideration is listed below.<sup>5,7,10,14</sup></p>
     <div class="medical-conditions-container">
         <h3>Differential Diagnosis of Seizure During Pregnancy or After Delivery</h3>
         <div class="category">

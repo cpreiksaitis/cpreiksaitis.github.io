@@ -3,164 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>EVALER12</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 40px;
-    }
-    .header {
-        text-align: center;
-        margin-bottom: 50px;
-    }
-    .header h1 {
-        font-size: 24px;
-        color: #333;
-    }
-    .author {
-        font-size: 16px;
-        font-weight: bold;
-        color: #666;
-        text-align: left;
-        margin-bottom: 20px;
-    }
-    .section {
-        margin-bottom: 20px;
-    }
-    .section h2 {
-        color: #0275d8;
-        font-size: 20px;
-        margin-bottom: 5px;
-        margin-top: 5px;
-    }
-    .section h3 {
-        color: black;
-        font-size: 18px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    .section h4 {
-        color: #0275d8;
-        font-size: 16px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    .section h5 {
-        color: #333;
-        font-size: 14px;
-        margin-top:5px;
-    }
-    .section p {
-        margin-top:5px;
-    }
-    .lighter {
-        font-weight: lighter;
-    }
-    .list {
-        margin-left: 20px;
-        list-style-type: disc;
-    }
-    .link {
-        text-decoration: underline;
-        color: #0275d8;
-    }
-    img {
-        display: block;
-        margin: 20px auto;
-        max-width: 100%;
-        height: auto;
-    }
-    .key-concepts-box {
-            width: 80%;
-            border: 2px solid #0275d8;
-            background-color: #d9e2eb;
-            padding: 20px;
-            margin: 20px auto;
-        }
-        .key-concepts-title {
-            background-color: #0275d8;
-            color: white;
-            padding: 10px;
-            margin: -20px -20px 10px -20px;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .key-concepts-list {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        .key-concepts-list li {
-            margin-bottom: 10px;
-        }
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 20px;
-        font-size: 14px;
-    }
-    th, td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        text-align: left;
-    }
-    th {
-        background-color: #f2f2f2;
-        font-weight: bold;
-    }
-    caption {
-        caption-side: top;
-        text-align: left;
-        font-weight: bold;
-        padding: 10px 0;
-    }
-    .small {
-        font-size: 70%;
-    }
-    .bold {
-        font-weight: bold;
-    }
-    .question {
-            margin-bottom: 15px;
-        }
-    .question-number {
-            margin-bottom: 5px;
-        }
-    .options{
-            margin-left: 20px;
-            margin-bottom: 30px;
-        }
-    .answer {
-            font-weight: bold;
-            margin-left: 20px;
-        }
-    .answer-explanation {
-            margin-left: 20px;
-            margin-bottom: 20px;
-        }
-        .box {
-            width: 80%;
-            border: 2px solid #0275d8;
-            background-color: #d9e2eb;
-            font-size: 14px;
-            padding: 10px;
-            margin: 10px auto;
-        }
-        .box-title {
-            background-color: #0275d8;
-            color: white;
-            padding: 10px;
-            margin: -10px -10px 10px -10px;
-            font-size: 14px;
-            font-weight: bold;
-        }
-        .box-list {
-            list-style-type: disc;
-            padding: 10px;
-        }
-        .box li {
-            margin-bottom: 10px;
-        }
-</style>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
 </head>
 <body>
 <div class="header">
@@ -563,61 +407,91 @@
     <div class="question">
         <div class="question-number"><span class="bold">1.</span> What is the most common manifestation of acute rheumatic fever (ARF)?</div>
         <div class="options">
-            a. Carditis<br>
-            b. Chorea<br>
-            c. Erythema marginatum<br>
-            d. Polyarthritis
+            <span>A. Carditis</span>
+            <span>B. Chorea</span>
+            <span>C. Erythema marginatum</span>
+            <span>D. Polyarthritis</span>
         </div>
-        <div class="answer">Answer: d.</div>
+        <div class="toggle-answer">
+            <span class="triangle"></span>
+            <span class="toggle-text">Show Answer</span>
+        </div>
+        <div class="answer-container hidden">
+        <div class="answer">Answer: D.</div>
         <div class="answer-explanation">Arthritis occurs early in the course of ARF. The knees, ankles, elbows, and wrists are commonly affected, and pain can be out of proportion to physical findings. Cardiac manifestations are subtle and may reflect endocarditis, myocarditis, or pericarditis. Chorea and erythema marginatum are rare. Chorea is typically a late finding.</div>
+    </div>
     </div>
     
     <div class="question">
         <div class="question-number"><span class="bold">2.</span> A 49-year-old woman presents with progressive dyspnea on exertion and orthopnea. Vital signs are temperature 36.7°C (98.1°F; oral), heart rate, 110 beats/min, blood pressure, 135/80 mm Hg, respiratory rate, 22 breaths/min, and oxygen (O2) saturation, 97% on room air. The physical examination is remarkable for clear lung fields and an irregularly irregular rhythm with a 4/6 diastolic murmur in the left anterior axillary line. She has no peripheral edema. Which of the following would be appropriate hemodynamic management of her cardiac pathophysiology?</div>
         <div class="options">
-            a. Aggressive diuresis<br>
-            b. β1-Agonist to increase chronotropy<br>
-            c. Beta blocker<br>
-            d. Selective arterial vasodilator
+            <span>A. Aggressive diuresis</span>
+            <span>B. β1-Agonist to increase chronotropy</span>
+            <span>C. Beta blocker</span>
+            <span>D. Selective arterial vasodilator</span>
         </div>
-        <div class="answer">Answer: c.</div>
+        <div class="toggle-answer">
+            <span class="triangle"></span>
+            <span class="toggle-text">Show Answer</span>
+        </div>
+        <div class="answer-container hidden">
+        <div class="answer">Answer: C.</div>
         <div class="answer-explanation">This patient has a picture consistent with atrial fibrillation and mitral stenosis. The apical diastolic murmur and left atrial enlargement, along with progressive dyspnea, all support the diagnosis. Tachycardia is poorly tolerated because of the need for higher left atrial pressures and a longer time during diastole to perfuse across the stenotic valve. Slow and full are appropriate goals. Diuresis might decrease venous return. Any agent producing tachycardia would decrease diastole time and left ventricular preload. An arterial vasodilator would have little effect, given the normal blood pressure and the fact that systemic vascular dilation would not be seen at the mitral valve level as long as the aortic valve was competent.</div>
+    </div>
     </div>
     
     <div class="question">
         <div class="question-number"><span class="bold">3.</span> A 32-year-old woman with a history of injection drug use presents with persistent fevers, night sweats, and shortness of breath. Vital signs are temperature 38.2°C (100.8°F; oral), heart rate, 123 beats/min, blood pressure, 105/60 mm Hg, respiratory rate, 26 breaths/min, and oxygen (O2) saturation, 93% on room air. The physical examination is remarkable for scattered rhonchi and a 2/6 systolic murmur in the left lower sternal border. Which of the following is the most appropriate antibiotic to start?</div>
         <div class="options">
-            a. Clindamycin<br>
-            b. Vancomycin<br>
-            c. Ceftriaxone<br>
-            d. Cefepime
+            <span>A. Clindamycin</span>
+            <span>B. Vancomycin</span>
+            <span>C. Ceftriaxone</span>
+            <span>D. Cefepime</span>
         </div>
-        <div class="answer">Answer: b.</div>
+        <div class="toggle-answer">
+            <span class="triangle"></span>
+            <span class="toggle-text">Show Answer</span>
+        </div>
+        <div class="answer-container hidden">
+        <div class="answer">Answer: B.</div>
         <div class="answer-explanation">In most cases, empiric therapy in the ED should include vancomycin, and vancomycin alone for one or two doses is a reasonable approach for native valve and prosthetic valve infection and in IDUs. Ceftriaxone can be added to vancomycin to cover HACEK and other gram-negative organisms, but these are responsible for less than 6% of infections. There is no role at this time for empiric use of clindamycin or cefepime.</div>
+        </div>
     </div>
     
     <div class="question">
         <div class="question-number"><span class="bold">4.</span> A 62-year-old man presents 3 days after being admitted for an inferior ST-segment elevation myocardial infarction (STEMI). He underwent a successful percutaneous coronary intervention (PCI) and was just discharged earlier in the day. He developed sudden onset shortness of breath at home, and he arrives in extremis. Vital signs are temperature 37.2°C (98.8°F; oral), heart rate, 112 beats/min, blood pressure, 85/68 mm Hg, respiratory rate, 24 breaths/min, and oxygen (O2) saturation, 90% on room air. The physical examination is remarkable for severe respiratory distress, diffuse crackles, and a 2/6 systolic murmur in the left lower sternal border. Which of the following is the most appropriate intervention?</div>
         <div class="options">
-            a. Give 2L of crystalloid over an hour.<br>
-            b. Start dobutamine.<br>
-            c. Initiation of dialysis for volume overload.<br>
-            d. Initiate continuous positive airway pressure (CPAP) therapy.
+            <span>A. Give 2L of crystalloid over an hour.</span>
+            <span>B. Start dobutamine.</span>
+            <span>C. Initiation of dialysis for volume overload.</span>
+            <span>D. Initiate continuous positive airway pressure (CPAP) therapy.</span>
         </div>
-        <div class="answer">Answer: d.</div>
+        <div class="toggle-answer">
+            <span class="triangle"></span>
+            <span class="toggle-text">Show Answer</span>
+        </div>
+        <div class="answer-container hidden">
+        <div class="answer">Answer: D.</div>
         <div class="answer-explanation">This patient presents with likely acute mitral regurgitation (MR) from a papillary muscle rupture after a myocardial infarction (MI). Giving additional fluid will likely make his pulmonary edema worse. Starting dobutamine without a vasopressor while he is hypotensive could make the hypotension worse. When the diagnosis of acute MR is suspected, initial stabilization in the ED includes treatment of pulmonary edema with intravenous nitrates, diuretics, and noninvasive positive pressure ventilation.</div>
+            </div>
     </div>
     
     <div class="question">
         <div class="question-number"><span class="bold">5.</span> A 38-year-old man presents with progressive dyspnea over a day, starting 2 hours before arrival. Vital signs are temperature 38.9°C (102.0°F; oral), heart rate, 115 beats/min, blood pressure, 120/72 mm Hg, respiratory rate, 26 breaths/min, and oxygen (O2) saturation, 92% on room air. The physical examination is remarkable for diffuse crackles and a 2/6 systolic murmur in the left lower sternal border. His echocardiogram demonstrates a large mass on the mitral valve with severe mitral regurgitation (MR). In addition to managing his pulmonary edema, which of the following is the most appropriate intervention?</div>
         <div class="options">
-            a. Administer beta-blockade to reduce the risk of embolization.<br>
-            b. Consult Cardiac Surgery.<br>
-            c. Start a heparin infusion.<br>
-            d. Start digoxin for heart rate control.
+            <span>A. Administer beta-blockade to reduce the risk of embolization.</span>
+            <span>B. Consult Cardiac Surgery.</span>
+            <span>C. Start a heparin infusion.</span>
+            <span>D. Start digoxin for heart rate control.</span>
         </div>
-        <div class="answer">Answer: b.</div>
+        <div class="toggle-answer">
+            <span class="triangle"></span>
+            <span class="toggle-text">Show Answer</span>
+        </div>
+        <div class="answer-container hidden">
+        <div class="answer">Answer: B.</div>
         <div class="answer-explanation">Patients with suspected infectious endocarditis (IE) and acute heart failure require immediate consultation by a cardiothoracic surgeon. In general, there has been a shift toward earlier surgical treatment in IE, with approximately one-half of patients with left-sided infection undergoing surgery during the index admission. If possible, patients with left-sided IE should be managed by a multidisciplinary team at a center capable of cardiothoracic surgery. There is no role for addition of beta-blockade in this patient in heart failure. Heparin and digoxin are not indicated for IE.</div>
+    </div>
     </div>
 </div>
 
